@@ -36,9 +36,9 @@ curtime = time.mktime(time.strptime("%s-%s-%s" % (yy,mm,dd), "%Y-%m-%d"))
 data = calendar.weekday(yy,mm,dd)
 
 classes=('连班','白班','夜班','下夜班','休假')
-print("初始时间戳:",curtime_1)
-print("一天的时间戳差为：",curtime_0)
-print("这是输入的时间戳",curtime)
+# print("初始时间戳:",curtime_1)
+# print("一天的时间戳差为：",curtime_0)
+# print("这是输入的时间戳",curtime)
 
 # 将日期时间转为时间戳
 time_s = datetime_dt.timestamp()
