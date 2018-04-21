@@ -49,9 +49,9 @@ a = int(abs(((curtime-curtime_1)/curtime_0))%5)
 
 weekdays=('周一','周二','周三','周四','周五','周六','周日')
 # print(weekdays[0])
-print(data)
-print(a)
-if a==2 and data ==1 or 3 or 6:
+print('data=%s'%data)
+print('a=%s'%a)
+if a==2 and data ==(1 or 3 or 6):
     print("%s/%s/%s,这是%s,而这天是早夜班！"%(yy,mm,dd,weekdays[data]))
 else:
     print("%s/%s/%s,这是%s,而这天是%s！"%(yy,mm,dd,weekdays[data],classes[a]))
