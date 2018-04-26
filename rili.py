@@ -20,11 +20,14 @@ calendar.setfirstweekday(calendar.SUNDAY)
 
 # 输出某个月的日历
 # print(calendar.month(2017,3))
-
-# 输入指定年月
-yy = int(input("输入年份: "))
-mm = int(input("输入月份: "))
-dd = int(input("输入日期: "))
+#
+# # 输入指定年月
+# yy = int(input("输入年份: "))
+# mm = int(input("输入月份: "))
+# dd = int(input("输入日期: "))
+# 输入指定日期
+# yy,mm,dd = input("请输入日期：").strip().split()
+yy,mm,dd =map(int,input("请输入日期：").split('-'))
 
 # 格式化字符串转化为时间对象
 curtime_1 = time.mktime(time.strptime("2018-04-20", "%Y-%m-%d"))
