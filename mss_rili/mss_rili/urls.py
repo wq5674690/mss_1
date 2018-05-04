@@ -15,7 +15,12 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from django.conf.urls import url
+import hello.views as bv
+
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    # 注意这里对应我view层里面的home函数
+    url(r'^$', bv.sousuo),
 ]
