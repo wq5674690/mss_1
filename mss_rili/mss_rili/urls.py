@@ -16,11 +16,16 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from django.conf.urls import url
+from hello import views as hello_views  # new
+
 import hello.views as bv
 
-
 urlpatterns = [
-    path('admin/', admin.site.urls),
+    path('', hello_views.index),  # new
+    path('^demo/$', admin.site.urls),
+    path('^rili/$', hello_views.rili,name='rili'),
     # 注意这里对应我view层里面的home函数
-    url(r'^$', bv.sousuo),
+    #url(r'^$', bv.sousuo),
+    path('^sousuo/$',bv.sousuo),
+    path('^test1/$',bv.test1),
 ]
