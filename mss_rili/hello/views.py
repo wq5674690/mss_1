@@ -17,7 +17,7 @@ def demo(request):
     return HttpResponse(u"欢迎光临，自强学堂!这是一个demo！")
 
 def index(request):
-    return HttpResponse(u"这是一个登录界面！")
+    return HttpResponse(u"这是一个登录界面!！")
 
 def rili(request):
     yy = request.GET['yy']

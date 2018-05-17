@@ -22,7 +22,8 @@ import hello.views as bv
 
 urlpatterns = [
     path('', hello_views.index),  # new
-    path('^demo/$', admin.site.urls),
+    path('^demo/$', hello_views.demo),  # new
+    path('^admin/$', admin.site.urls),
     path('^rili/$', hello_views.rili,name='rili'),
     # 注意这里对应我view层里面的home函数
     #url(r'^$', bv.sousuo),
