@@ -9,7 +9,8 @@ from django.http import HttpResponse
 #这里对应html文件
 def sousuo(request):
     return render(request, 'test.html')
-
+def dao(request):
+    return render(request, 'index.html')
 def test1(request):
     return render(request, 'test1.html')
 
