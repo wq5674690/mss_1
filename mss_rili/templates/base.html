@@ -2,14 +2,19 @@
 <html>
 <head>
     <title>{% block title %}默认标题{% endblock %} - 瞢噬殇</title>
+<script src="/static/js/adapter.js"></script> <!--rem适配js-->
 </head>
 <body>
-{% include 'nav.html' %}
-{% include 'index.html' %}
-{% block content %}
-<div>这里是默认内容，所有继承自这个模板的，如果不覆盖就显示这里的默认内容!!</div>
-{% endblock %}
-{% include 'bottom.html' %}
-{% include 'tongji.html' %}
+
+        {% include 'leftnav.html' %}
+
+        {% include 'nav.html' %}
+        {% block content %}
+            <div>这里是默认内容，所有继承自这个模板的，如果不覆盖就显示这里的默认内容!!</div>
+        {% endblock %}
+        {% include 'bottom.html' %}
+        {% include 'tongji.html' %}
+
+
 </body>
 </html>

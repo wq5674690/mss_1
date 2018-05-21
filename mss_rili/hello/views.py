@@ -10,7 +10,7 @@ from django.http import HttpResponse
 def sousuo(request):
     return render(request, 'test.html')
 def dao(request):
-    return render(request, 'index.html')
+    return render(request, 'leftnav.html')
 def test1(request):
     return render(request, 'test1.html')
 
