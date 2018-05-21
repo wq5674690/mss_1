@@ -152,10 +152,6 @@
   -o-transition: all 0.4s ease;
   -ms-transition: all 0.4s ease;
 }
-/*#menu #open .navBox ul li .secondary h3 a{*/
-    /*color: #ffffff;*/
-  /*text-decoration: none;*/
-/*}*/
 #menu #open .navBox ul li .secondary h3:hover {
   background-color: #1acbfc;
 }
