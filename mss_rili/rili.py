@@ -38,7 +38,7 @@ curtime_0 = curtime_2 - curtime_1
 curtime = time.mktime(time.strptime("%s-%s-%s" % (yy,mm,dd), "%Y-%m-%d"))
 data = calendar.weekday(yy,mm,dd)
 
-classes=('连班','白班','夜班','下夜班','休假')
+classes=('连班','主班','夜班','下夜班','休假')
 # print("初始时间戳:",curtime_1)
 # print("一天的时间戳差为：",curtime_0)
 # print("这是输入的时间戳",curtime)
@@ -52,8 +52,8 @@ a = int(abs(((curtime-curtime_1)/curtime_0))%5)
 
 weekdays=('周一','周二','周三','周四','周五','周六','周日')
 # print(weekdays[0])
-print('data=%s'%data)
-print('a=%s'%a)
+# print('data=%s'%data)
+# print('a=%s'%a)
 if a==2 and (data ==1 or data ==3 or data==6):
     print("%s/%s/%s,这是%s,而这天是早夜班！"%(yy,mm,dd,weekdays[data]))
 else:

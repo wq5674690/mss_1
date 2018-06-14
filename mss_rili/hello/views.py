@@ -11,7 +11,7 @@ def sousuo(request):
     return render(request, 'test.html')
 def dao(request):
     return render(request, 'leftnav.html')
-def test1(request):
+def test(request):
     return render(request, 'test1.html')
 
 def demo(request):

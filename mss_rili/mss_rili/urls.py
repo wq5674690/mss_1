@@ -28,6 +28,6 @@ urlpatterns = [
     # 注意这里对应我view层里面的home函数
     #url(r'^$', bv.sousuo),
     path('sousuo',bv.sousuo),
-    path('test1',bv.test1),
+    path('test',bv.test),
     path('dao',bv.dao),
 ]
