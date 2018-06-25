@@ -42,7 +42,7 @@ def work_time(time0):
 
 work_time(time_array("2018-06-25"))
 work_time(time_now)
-#时间格式的时间差天数
+#时间格式的时间之差天数
 def days_time(time1,time2):
     str1 = time1.split('-')
     str2 = time2.split('-')
