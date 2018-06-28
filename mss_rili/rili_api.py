@@ -16,7 +16,7 @@ def time_array(time0):
     time_array1 = time.strptime(time0, "%Y-%m-%d")
     #转换成时间戳
     time_stamp = time.mktime(time_array1)
-    return(time_stamp)
+    return time_stamp
 #时间戳方式去计算班次
 def work_time(time0):
     #初始班次时间搓
@@ -36,22 +36,44 @@ def work_time(time0):
     b = int(abs(((time0-curtime_1)/curtime_0))%5)
     # 判断班次
     if b==2 and (data ==1 or data ==3 or data==6):
-        print("%s/%s/%s,这是%s,而这天是早夜班！"%(a[0],a[1],a[2],weekdays[data]))
+        return("%s/%s/%s,这是%s,而这天是早夜班！"%(a[0],a[1],a[2],weekdays[data]))
     else:
-        print("%s/%s/%s,这是%s,而这天是%s！"%(a[0],a[1],a[2],weekdays[data],classes[b]))
+        return("%s/%s/%s,这是%s,而这天是%s！"%(a[0],a[1],a[2],weekdays[data],classes[b]))
 
-work_time(time_array("2018-06-25"))
-work_time(time_now)
+# 字符格式转时间格式
+def data_time(time0):
+    str0 = time0.split("-")
+    d0 = datetime.datetime(int(str0[0]),int(str0[1]),int(str0[2]))
+    return d0
+
 #时间格式的时间之差天数
 def days_time(time1,time2):
-    str1 = time1.split('-')
-    str2 = time2.split('-')
-    d1 = datetime.datetime(int(str1[0]),int(str1[1]),int(str1[2]))
-    d2 = datetime.datetime(int(str2[0]),int(str2[1]),int(str2[2]))
-    # d0 = (d1 – d2).days
-    print((d1-d2).days)
+    d1 = data_time(time1)
+    d2 = data_time(time2)
+    return (d2-d1).days
 
-# dt1 = "2018-06-05"
-# dt2 = "2018-06-01"
+#时间格式的值精确到天数
+def timedelta_days(time0):
+    timeArray = time.strptime(time0, "%Y-%m-%d %H:%M:%S")
+    #转换成新的时间格式(2016-05-05)
+    dt_new = time.strftime("%Y-%m-%d",timeArray)
+    return dt_new
 
-# days_time(dt1,dt2)
+# 遍历日期并打印班次
+def rili_for(time0,time1):
+    print()
+    print("======这是烨烨的详情排班表======")
+    print()
+    for i in range(0,days_time(time0,time1)):
+        t1 = data_time(time0) + datetime.timedelta(days=i)
+        # print(timedelta_days(t1))
+        d1 = timedelta_days(str(t1))
+        rili0 = work_time(time_array(d1))
+        print(rili0)
+# rili_for("2018-06-25","2018-06-28")
+print("======这是烨烨的工作排班表======")
+print()
+rili_for(input("请输入第一个日期："),input("请输入第二个日期："))
+
+
+
