@@ -36,9 +36,9 @@ def work_time(time0):
     b = int(abs(((time0-curtime_1)/curtime_0))%5)
     # 判断班次
     if b==2 and (data ==1 or data ==3 or data==6):
-        return("%s/%s/%s,这是%s,而这天是早夜班！"%(a[0],a[1],a[2],weekdays[data]))
+        return("%s/%s/%s,这天%s,早夜班！"%(a[0],a[1],a[2],weekdays[data]))
     else:
-        return("%s/%s/%s,这是%s,而这天是%s！"%(a[0],a[1],a[2],weekdays[data],classes[b]))
+        return("%s/%s/%s,这天%s,%s！"%(a[0],a[1],a[2],weekdays[data],classes[b]))
 
 # 字符格式转时间格式
 def data_time(time0):
@@ -64,16 +64,36 @@ def rili_for(time0,time1):
     print()
     print("======这是烨烨的详情排班表======")
     print()
-    for i in range(0,days_time(time0,time1)):
+    for i in range(0,days_time(time0,time1)+1):
         t1 = data_time(time0) + datetime.timedelta(days=i)
-        # print(timedelta_days(t1))
         d1 = timedelta_days(str(t1))
         rili0 = work_time(time_array(d1))
         print(rili0)
+
+# 遍历日期并打印周末匹配烨烨的班次
+def rili_weekdays(time0,time1):
+    print()
+    print("======周末匹配烨烨的班次表======")
+    print()
+    for i in range(0,days_time(time0,time1)+1):
+        t1 = data_time(time0) + datetime.timedelta(days=i)
+        d1 = timedelta_days(str(t1))
+        rili0 = work_time(time_array(d1))
+        b = rili0.split(',')
+        c = b[1].split('这天')
+        if b[2] == "下夜班！" and c[1] == "周六":
+        # if b[2] == "下夜班！":
+            print(rili0)
+        elif b[2] == "休假！" and c[1] == "周日":
+            print(rili0)
+        else:
+            pass
+
 # rili_for("2018-06-25","2018-06-28")
 print("======这是烨烨的工作排班表======")
 print()
-rili_for(input("请输入第一个日期："),input("请输入第二个日期："))
+# rili_for(input("请输入第一个日期："),input("请输入第二个日期："))
+rili_weekdays(input("请输入第一个日期："),input("请输入第二个日期："))
 
 
 
