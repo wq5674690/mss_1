@@ -61,9 +61,9 @@ def timedelta_days(time0):
 
 # 遍历日期并打印班次
 def rili_for(time0,time1):
-    print()
-    print("======这是烨烨的详情排班表======")
-    print()
+    # print()
+    print("\n======这是烨烨的详情排班表======\n")
+    # print()
     for i in range(0,days_time(time0,time1)+1):
         t1 = data_time(time0) + datetime.timedelta(days=i)
         d1 = timedelta_days(str(t1))
@@ -90,10 +90,23 @@ def rili_weekdays(time0,time1):
             pass
 
 # rili_for("2018-06-25","2018-06-28")
-print("======这是烨烨的工作排班表======")
-print()
+print("\n======这是烨烨的工作排班表======")
+# print()
+print('''
+    请选择类型编号：
+    1、烨烨的详情排班表！
+    2、周末匹配烨烨班次表！
+    ''')
+a=(input("输入的编号为：")).split(':')
+
+if int(a[0])==1:
+    rili_for(input("请输入第一个日期："),input("请输入第二个日期："))
+elif int(a[0])==2:
+    rili_weekdays(input("请输入第一个日期："),input("请输入第二个日期："))
+else:
+    print("您输入的编号有误！")
 # rili_for(input("请输入第一个日期："),input("请输入第二个日期："))
-rili_weekdays(input("请输入第一个日期："),input("请输入第二个日期："))
+# rili_weekdays(input("请输入第一个日期："),input("请输入第二个日期："))
 
 
 
