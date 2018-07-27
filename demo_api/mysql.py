@@ -10,7 +10,7 @@ class Mysql:
             'host': '127.0.0.1',
             'port': 3306,
             'user': 'root',
-            'password': 'wq5674690',#密码1
+            'password': '******',#密码1
             'db': 'test',
             'charset': 'utf8',
             'cursorclass': pymysql.cursors.DictCursor,
