@@ -199,12 +199,12 @@ def create_server_list(description_vm_begin, ip_range):
         
 def main():
 
-    vc_host = "192.168.101.24"
-    vc_user = "administrator@vsphere.local"
-    vc_password = "Mandao#h3c2013"
+    vc_host = "***"
+    vc_user = "***"
+    vc_password = "***"
 
-    vm_user = "root"
-    vm_pwd = "AfVdV@KKwfRTDKiu"
+    vm_user = "***"
+    vm_pwd = "***"
 
     executable_program = "/bin/bash"
     source_file = "reconfig.sh"
