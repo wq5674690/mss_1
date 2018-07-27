@@ -26,7 +26,7 @@ def hello():
 @app.route("/2")
 # 烨烨的详情排班表
 def rili_days():
-    return rili_a.rili_for("2018-07-23","2018-10-28")
+    return rili_a.rili_for("2018-07-21","2018-10-28")
 @app.route("/3")
 # 周末匹配烨烨的班次表
 def weekdays_days():

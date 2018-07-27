@@ -16,4 +16,4 @@ def start():
     return jsonify(db.queryData())
 
 if __name__=="__main__":
-    app.run(debug=True) 
+    app.run(debug=True)
