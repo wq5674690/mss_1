@@ -156,6 +156,9 @@ done
 echo "%systemadmin ALL = NOPASSWD: ALL" >> /etc/sudoers
 
 echo "ssh-rsa *** ***@web-101-11" >> /home/systemadmin3/.ssh/authorized_keys
+<<<<<<< HEAD
 
+=======
+>>>>>>> origin/master
 
 reboot
