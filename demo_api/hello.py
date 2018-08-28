@@ -19,9 +19,8 @@ def login():
         return do_the_login()
     else:
         return show_the_login_form()
-
 @app.route("/hello")
-def hello():    
+def hello():
     return "Hello World!"
 @app.route("/2")
 # 烨烨的详情排班表
@@ -35,6 +34,8 @@ def weekdays_days():
 def start1():
     db = mysql.Mysql()
     return jsonify(db.queryData())
-
+# @app.route("/index.html")
+# def index():
+#      return static/index.html
 if __name__=="__main__":
     app.run(debug=True) 

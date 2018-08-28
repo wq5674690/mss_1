@@ -10,9 +10,17 @@
         {% block content %}
             <div>这里是默认内容，所有继承自这个模板的，如果不覆盖就显示这里的默认内容!!</div>
         {% endblock %}
-        {% include 'bottom.html' %}
         {% include 'tongji.html' %}
-
+        <div style="position:fixed;
+                 right:400px;
+                bottom:0px;
+                {#color:#fff;#}
+                border-top:3px solid #f30505;
+                display:block;
+                {#width:100%;#}
+                text-align:center; ">
+            {% include 'bottom.html' %}
+        </div>
 
 </body>
 </html>
