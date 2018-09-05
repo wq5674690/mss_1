@@ -3,6 +3,7 @@
 import time
 import calendar
 import datetime
+import  flask
 
 #获取当前时间的时间戳
 time_now = int(time.time())
@@ -17,6 +18,7 @@ def time_array(time0):
     #转换成时间戳
     time_stamp = time.mktime(time_array1)
     return time_stamp
+
 #时间戳方式去计算班次
 def work_time(time0):
     #初始班次时间搓
@@ -63,20 +65,20 @@ def timedelta_days(time0):
 def rili_for(time0,time1):
     # print()
     # print("\n======这是烨烨的详情排班表======\n")
-    msg = "\n======这是烨烨的详情排班表======<br>"
+    msg = "\n======这是烨烨的详情排班表======" + flask.Markup('<br />')
     # print()
     for i in range(0,days_time(time0,time1)+1):
         t1 = data_time(time0) + datetime.timedelta(days=i)
         d1 = timedelta_days(str(t1))
         rili0 = work_time(time_array(d1))
         # print(rili0)
-        msg += "%s <br>" % rili0
+        msg += flask.Markup(rili0) + flask.Markup('<br />')
     return msg
 
 # 遍历日期并打印周末匹配烨烨的班次
 def rili_weekdays(time0,time1):
     # print("======周末匹配烨烨的班次表======")
-    msg1 = "\n======周末匹配烨烨的班次表======<br>"
+    msg1 = "\n======周末匹配烨烨的班次表======" + flask.Markup('<br />')
 
     for i in range(0,days_time(time0,time1)+1):
         t1 = data_time(time0) + datetime.timedelta(days=i)
@@ -87,10 +89,10 @@ def rili_weekdays(time0,time1):
         if b[2] == "下夜班！" and c[1] == "周六":
         # if b[2] == "下夜班！":
             # print(rili0)
-            msg1 += "%s <br>" % rili0
+            msg1 += flask.Markup(rili0) + flask.Markup('<br />')
         elif b[2] == "休假！" and c[1] == "周日":
             # print(rili0)
-            msg1 += "%s <br>" % rili0
+            msg1 += flask.Markup(rili0) + flask.Markup('<br />')
         else:
             pass
     return msg1
