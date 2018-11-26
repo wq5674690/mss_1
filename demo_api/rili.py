@@ -17,8 +17,9 @@ calendar.setfirstweekday(calendar.SUNDAY)
 
 # 显示日历，参数：年、字符长，行的间隔、每月之间的间隔
 # print (calendar.calendar(2017,2,1,6))
+today_1 = datetime_dt.strftime("%Y/%m/%d")
 
-
+print(today_1.replace("/","-",3))
 # 输出某个月的日历
 # print(calendar.month(2017,3))
 #

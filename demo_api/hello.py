@@ -12,13 +12,17 @@ import json
 import mysql
 import rili_a
 
-app = Flask(__name__)
+# app = Flask(__name__)
 
 app = Flask(__name__,static_url_path='')
 #静态模板index.html等都放在‘/home/ronny/mywebsite/static/'下。　路由不用再加’/static/index.html‘而是'index.html'就好
 @app.route('/')
 def index():
     return app.send_static_file('cat.html')
+
+@app.route('/user/<name>')
+def user(name):
+    return '<h1>Hello,%s!</h1>' % name
 
 @app.route('/1')
 def hello():
@@ -39,36 +43,38 @@ def rili_days():
     # 烨烨的详情排班表
     params = request.args
     begin_time = params.get('begin_time')
+    datetime_dt = datetime.datetime.today()
+    today_time = datetime_dt.strftime("%Y/%m/%d")
     if not begin_time:
-        begin_time = '2018-08-28'
+        begin_time = today_time.replace("/","-",3)
     end_time = params.get('end_time')
     if not end_time:
-        end_time = "2018-10-28"
+        end_time = today_time.replace("/","-",3)
     res = rili_a.rili_for(begin_time, end_time)
     # print(res)
     return render_template('index.html', name=res)
 
 @app.route("/3")
 def weekdays_days():
+    # 周末匹配烨烨的班次表
     # 使用方法 http://127.0.0.1:5000/3?begin_time=2018-09-09&end_time=2018-11-09
     params = request.args
     begin_time = params.get('begin_time')
+    datetime_dt = datetime.datetime.today()
+    today_time = datetime_dt.strftime("%Y/%m/%d")
     if not begin_time:
-        begin_time = '2018-08-28'
+        begin_time = today_time.replace("/","-",3)
     end_time = params.get('end_time')
     if not end_time:
-        end_time = "2018-10-28"
+        end_time = today_time.replace("/","-",3)
     res = rili_a.rili_weekdays(begin_time, end_time)
     # print(res)
     return render_template('index.html', name=res)
-    # 周末匹配烨烨的班次表
-    # return rili_a.rili_weekdays("2018-08-28","2018-12-31")
+
 @app.route('/4',methods=['GET'])
 def start1():
     db = mysql.Mysql()
     return jsonify(db.queryData())
-# @app.route("/index.html")
-# def index():
-#      return static/index.html
+
 if __name__=="__main__":
     app.run(debug=True) 
