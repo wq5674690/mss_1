@@ -32,7 +32,7 @@ def work_time(time0):
     a = dt.split('-')
     data = calendar.weekday(int(a[0]),int(a[1]),int(a[2]))
     #班次表和星期表
-    classes=('护理班','连班','主班','夜班','下夜班','休假')
+    classes=('护理班','连 班','主 班','夜 班','下夜班','休 假')
     weekdays=('周一','周二','周三','周四','周五','周六','周日')
     # 计算班次周期
     b = int(abs(((time0-curtime_1)/curtime_0))%6)

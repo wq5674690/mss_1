@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 # -*- coding: UTF-8 -*-
-import time
+import time,sys
 import calendar
 import datetime
 
@@ -31,7 +31,7 @@ def work_time(time0):
     a = dt.split('-')
     data = calendar.weekday(int(a[0]),int(a[1]),int(a[2]))
     #班次表和星期表
-    classes=('护理班','连班','主班','夜班','下夜班','休假')
+    classes=('护理班','连  班','主  班','夜  班','下夜班','休  假')
     weekdays=('周一','周二','周三','周四','周五','周六','周日')
     # 计算班次周期
     b = int(abs(((time0-curtime_1)/curtime_0))%6)
@@ -93,26 +93,55 @@ def rili_weekdays(time0,time1):
             pass
     return msg
 
-# rili_for("2018-06-25","2018-06-28")
-print("\n======这是烨烨的工作排班表======")
-# print()
-print('''
-    请选择类型编号：
-    1、烨烨的详情排班表！
-    2、周末匹配烨烨班次表！
-    ''')
-a=input("输入的编号为：" )
+def template_rili():
+    print("\n======这是烨烨的工作排班表======")
+    print('''
+        请选择类型编号：
+        1、烨烨的详情排班表！
+        2、周末匹配烨烨班次表！
+        ''')
+    a=input("输入的编号为：" )
 
-if int(a)==1:
-    print()
-    print(rili_for(input("请输入第一个日期："),input("请输入第二个日期：")))
-elif int(a)==2:
-    print()
-    print(rili_weekdays(input("请输入第一个日期："),input("请输入第二个日期：")))
-else:
-    print()
-    print("您输入的编号有误！")
-# rili_for(input("请输入第一个日期："),input("请输入第二个日期："))
-# rili_weekdays(input("请输入第一个日期："),input("请输入第二个日期："))
+    if int(a)==1:
+        print()
+        print(rili_for(input("请输入第一个日期："),input("请输入第二个日期：")))
+    elif int(a)==2:
+        print()
+        print(rili_weekdays(input("请输入第一个日期："),input("请输入第二个日期：")))
+    else:
+        print()
+        print("您输入的编号有误！")
 
+def main():
+    help = """
+    执行方法： python3 %s template begin_time end_time
+            template（选择类型序列号）: 
+                        1、烨烨的详情排班表！
+                        2、周末匹配烨烨班次表！
+            begin_time: 开始时间
+            begin_time: 结束时间
+        
+    注：填写类型序列号，如1；开始时间和结束时间的标准格式为2018-01-01；            
+    """ % sys.argv[0]
+    try:
+        template = int(sys.argv[1])
+        begin_time = sys.argv[2]
+        end_time = sys.argv[3]
+    except Exception as e:
+        print(help)
+        b = input("请确认是否继续，如继续，请输入y，否则按除y之外任意键退出！")
+        while b == 'y' :
+            template_rili()
+        else:
+            pass
+        return
 
+    if template==1:
+        print(rili_for(begin_time,end_time))
+    elif template==2:
+        print(rili_weekdays(begin_time,end_time))
+    else:
+        print("您输入的参数有误！")
+
+if __name__ == "__main__":
+    main()

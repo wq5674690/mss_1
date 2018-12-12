@@ -18,7 +18,8 @@ app = Flask(__name__,static_url_path='')
 #静态模板index.html等都放在‘/home/ronny/mywebsite/static/'下。　路由不用再加’/static/index.html‘而是'index.html'就好
 @app.route('/')
 def index():
-    return app.send_static_file('index.html')
+    # return app.send_static_file('index.html')
+    return render_template ('index.html', contents=[i for i in range(10)])
 
 @app.route('/user/<name>')
 def user(name):
