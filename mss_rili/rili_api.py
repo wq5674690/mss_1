@@ -74,8 +74,9 @@ def rili_for(time0,time1):
 # 遍历日期并打印周末匹配烨烨的班次
 def rili_weekdays(time0,time1):
 
-    # print("\n======周末匹配烨烨的班次表======\n")
-    msg = "\n======周末匹配烨烨的班次表======\n"
+    print("\n======周末匹配烨烨的班次表======")
+    # msg = "\n======周末匹配烨烨的班次表======\n"
+    msg = ''
     for i in range(0,days_time(time0,time1)+1):
         t1 = data_time(time0) + datetime.timedelta(days=i)
         d1 = timedelta_days(str(t1))
@@ -86,11 +87,15 @@ def rili_weekdays(time0,time1):
         # if b[2] == "下夜班！":
             #print(rili0)
             msg += "%s \n" % rili0
-        elif b[2] == "休假！" and c[1] == "周日":
+        elif b[2] == "休  假！" and c[1] == "周日":
             # print(rili0)
             msg += "%s \n" % rili0
         else:
             pass
+    if not msg:
+        print("未查到任何匹配到的数据！！！")
+    else:
+        pass
     return msg
 
 def template_rili():
@@ -132,8 +137,7 @@ def main():
         b = input("请确认是否继续，如继续，请输入y，否则按除y之外任意键退出！")
         while b == 'y' :
             template_rili()
-        else:
-            pass
+            break
         return
 
     if template==1:
