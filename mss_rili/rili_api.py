@@ -105,7 +105,7 @@ def template_rili():
         1、烨烨的详情排班表！
         2、周末匹配烨烨班次表！
         ''')
-    a=input("输入的编号为：" )
+    a=input("输入的编号为：")
 
     if int(a)==1:
         print()

@@ -32,13 +32,13 @@ def work_time(time0):
     a = dt.split('-')
     data = calendar.weekday(int(a[0]),int(a[1]),int(a[2]))
     #班次表和星期表
-    classes=('护理班','连 班','主 班','夜 班','下夜班','休 假')
+    classes=('早夜班','下夜班','休 假','主 班')
     weekdays=('周一','周二','周三','周四','周五','周六','周日')
     # 计算班次周期
-    b = int(abs(((time0-curtime_1)/curtime_0))%6)
+    b = int(abs(((time0-curtime_1)/curtime_0))%4)
     # 判断班次
-    if b==3 and data==6:
-        return("%s/%s/%s,这天%s,早夜班！"%(a[0],a[1],a[2],weekdays[data]))
+    if b==2 and (data==6 or data ==5):
+        return("%s/%s/%s,这天%s,上午班！"%(a[0],a[1],a[2],weekdays[data]))
     else:
         return("%s/%s/%s,这天%s,%s！"%(a[0],a[1],a[2],weekdays[data],classes[b]))
 
@@ -79,7 +79,6 @@ def rili_for(time0,time1):
 def rili_weekdays(time0,time1):
     # print("======周末匹配烨烨的班次表======")
     msg1 = "\n======周末匹配烨烨的班次表======" + flask.Markup('<br />')
-
     for i in range(0,days_time(time0,time1)+1):
         t1 = data_time(time0) + datetime.timedelta(days=i)
         d1 = timedelta_days(str(t1))
@@ -90,7 +89,7 @@ def rili_weekdays(time0,time1):
         # if b[2] == "下夜班！":
             # print(rili0)
             msg1 += flask.Markup(rili0) + flask.Markup('<br />')
-        elif b[2] == "休假！" and c[1] == "周日":
+        elif b[2] == "上午班！" and c[1] == "周日":
             # print(rili0)
             msg1 += flask.Markup(rili0) + flask.Markup('<br />')
         else:

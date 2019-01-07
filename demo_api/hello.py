@@ -29,12 +29,23 @@ def user(name):
 # def hello():
 #     return jsonify(request.args)
 
-@app.route('/login', methods=['GET', 'POST'])
+# @app.route('/login', methods=['GET', 'POST'])
+# def login():
+#     if request.method == 'POST':
+#         return do_the_login()
+#     else:
+#         return show_the_login_form()
+
+#默认路径访问登录页面
+@app.route('/login.html')
 def login():
-    if request.method == 'POST':
-        return do_the_login()
-    else:
-        return show_the_login_form()
+    return render_template('login.html')
+
+#默认路径访问注册页面
+@app.route('/regist')
+def regist():
+    return render_template('regist.html')
+
 # @app.route("/hello")
 # # def hello2():
 # #     return "Hello World!"
