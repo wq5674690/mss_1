@@ -46,9 +46,7 @@ def login():
 def regist():
     return render_template('regist.html')
 
-# @app.route("/hello")
-# # def hello2():
-# #     return "Hello World!"
+
 @app.route("/yezi/2")
 def rili_days():
     # 使用方法 http://127.0.0.1:5000/2?begin_time=2018-09-09&end_time=2018-11-09
@@ -69,7 +67,6 @@ def rili_days():
 @app.route("/yezi/3")
 def weekdays_days():
     # 周末匹配烨烨的班次表
-    # 使用方法 http://127.0.0.1:5000/3?begin_time=2018-09-09&end_time=2018-11-09
     params = request.args
     begin_time = params.get('begin_time')
     datetime_dt = datetime.datetime.today()
@@ -81,6 +78,17 @@ def weekdays_days():
         end_time = today_time.replace("/","-",3)
     res = rili_a.rili_weekdays(begin_time, end_time)
     # print(res)
+    return render_template('top.html', name=res)
+
+@app.route("/yezi/5")
+def weekdays_days_test():
+    # 周末匹配烨烨的班次表
+    # 使用方法 http://127.0.0.1:5000/yezi/5?time0=2019-01-01+-+2019-01-24
+    time1 = request.args.get('time0')
+    time_str = time1.split(' - ')
+    begin_time = time_str[0]
+    end_time = time_str[1]
+    res = rili_a.rili_weekdays(begin_time,end_time)
     return render_template('top.html', name=res)
 
 @app.route('/sql/4',methods=['GET'])
