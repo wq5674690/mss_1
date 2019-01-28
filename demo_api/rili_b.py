@@ -35,21 +35,23 @@ def work_time(time0):
     data = calendar.weekday(int(a[0]),int(a[1]),int(a[2]))
     #班次表和星期表
     classes=("早夜班","下夜班","休 假","主 班")
-    weekdays=("周一","周二","周三","周四","周五","周六","周日")
+    # classes = ('zaoye','xiaye','xiu','zhu')
+    weekdays_1=("周一","周二","周三","周四","周五","周六","周日")
+    weekdays = ("1", "2", "3", "4", "5", "6", "7")
     # 计算班次周期
     b = int(abs(((time0-curtime_1)/curtime_0))%4)
     # 判断班次
     date_1 = dt.replace("-","/",3)
     dict_1 = {}
-    dict_1['date'] = date_1
-    dict_1['weekdays'] = weekdays[data]
+    dict_1["date"] = date_1
+    dict_1["weekdays"] = weekdays[data]
     # js = json.dumps(dict_1, sort_keys=True, indent=4, separators=(',', ':'))
     if b==2 and (data==6 or data ==5):
-        dict_1['classes'] = "上午班"
+        dict_1["classes"] = "shangwu"
         js = json.dumps(dict_1, sort_keys=True, indent=4)
         return(js)
     else:
-        dict_1['classes'] = classes[b]
+        dict_1["classes"] = classes[b]
         js = json.dumps(dict_1, sort_keys=True, indent=4)
         return(js)
 
@@ -76,14 +78,14 @@ def timedelta_days(time0):
 def rili_for(time0,time1):
     # print()
     # print("\n======这是烨烨的详情排班表======\n")
-    msg = "\n======这是烨烨的详情排班表======" + flask.Markup()
+    msg = "\n======这是烨烨的详情排班表======" + flask.Markup('<br />')
     # print()
     for i in range(0,days_time(time0,time1)+1):
         t1 = data_time(time0) + datetime.timedelta(days=i)
         d1 = timedelta_days(str(t1))
         rili0 = work_time(time_array(d1))
         # print(rili0)
-        msg += flask.Markup(rili0) + flask.Markup()
+        msg += flask.Markup(rili0) + flask.Markup('<br />')
     return msg
 
 # 遍历日期并打印周末匹配烨烨的班次
@@ -108,4 +110,4 @@ def rili_weekdays(time0,time1):
     return msg1
 
 
-print(rili_for('2019-01-20','2019-01-21'))
+# print(rili_for('2019-01-20','2019-01-31'))

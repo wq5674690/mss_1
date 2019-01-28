@@ -11,6 +11,7 @@ from flask import  render_template
 import json
 import mysql
 import rili_a
+import rili_b
 
 # app = Flask(__name__)
 
