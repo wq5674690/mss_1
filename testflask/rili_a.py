@@ -32,15 +32,17 @@ def work_time(time0):
     a = dt.split('-')
     data = calendar.weekday(int(a[0]),int(a[1]),int(a[2]))
     #班次表和星期表
-    classes=('连 班','主 班','早夜班','下夜班','休 假')
+    # classes=('连 班','主 班','早夜班','下夜班','休 假')
+    classes=('休 假','下午班','早夜班','下夜班')
     weekdays=('周一','周二','周三','周四','周五','周六','周日')
     # 计算班次周期
-    b = int(abs(((time0-curtime_1)/curtime_0))%5)
+    b = int(abs(((time0-curtime_1)/curtime_0))%4)
     # 判断班次
-    if b==4 and (data==6 or data ==5):
-        return("%s/%s/%s,这天%s,上午班！"%(a[0],a[1],a[2],weekdays[data]))
-    else:
-        return("%s/%s/%s,这天%s,%s！"%(a[0],a[1],a[2],weekdays[data],classes[b]))
+    # if b==4 and (data==6 or data ==5):
+    #     return("%s/%s/%s,这天%s,上午班！"%(a[0],a[1],a[2],weekdays[data]))
+    # else:
+    #     return("%s/%s/%s,这天%s,%s！"%(a[0],a[1],a[2],weekdays[data],classes[b]))
+    return ("%s/%s/%s,这天%s,%s！" % (a[0], a[1], a[2], weekdays[data], classes[b]))
 
 # 字符格式转时间格式
 def data_time(time0):

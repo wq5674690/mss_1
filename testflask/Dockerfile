@@ -1,6 +1,5 @@
-## Dockerfile that generates an instance of www.longjj.com
 FROM ubuntu:16.04
-LABEL maintainer="longjj"
+LABEL maintainer="mss"
 ENV LANG C
 
 RUN apt-get update \
