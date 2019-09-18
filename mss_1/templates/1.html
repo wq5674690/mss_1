@@ -1,0 +1,43 @@
+
+
+   <div>
+        <table>
+                <tr>
+                    <td>
+                        <input type="button" name="Submit" onclick="javascript:history.back(-1);" value="返回上一页">
+                    </td>
+                    <td>
+                        <a href="">前进</a><br>
+                    </td>
+                    <td colspan="" rowspan="" headers="">
+                        <!--<input type="button" name="Submit" value="首页" onclick="javascript:history.go(127.0.0.1:5000)" />-->
+                        <a href="/" target="_blank">首页</a>
+                    </td>
+                    <td>
+                        <a >欢迎，##！</a>
+                    </td>
+                </tr>
+        </table>
+        {{name}}
+    </div>
+    <table class="table table-bordered">
+    <tr>
+        <th>用户ID</th>
+        <th>公司ID</th>
+        <th>公司名称</th>
+        <th>联系邮箱</th>
+        <th>联系电话</th>
+        <th>所属公司</th>
+        <th>创建时间</th>
+    </tr>
+        {% for i in u %}
+            <tr>
+                <td>{{ i['runoob_id'] }}</td>
+                <td>{{ i['runoob_title'] }}</td>
+                <td>{{ i['runoob_author'] }}</td>
+                <td>{{ i['email'] }}</td>
+                <td>{{ i['phone'] }}</td>
+                <td>{{ i['namework'] }}</td>
+                <td>{{ i['submission_date'] }}</td>
+            </tr>
+    {% endfor %}

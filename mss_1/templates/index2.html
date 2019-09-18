@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>首页</title>
+    <!--<link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">-->
+    <!--<script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>-->
+    <!--<script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous">-->
+
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+
+    <style>
+    body{padding: 20px;}
+    .demo-input{padding-left: 10px; height: 38px; min-width: 262px; line-height: 38px; border: 1px solid #e6e6e6;  background-color: #fff;  border-radius: 2px;}
+    .demo-footer{padding: 50px 0; color: #999; font-size: 14px;}
+    .demo-footer a{padding: 0 5px; color: #01AAED;}
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <td>
+                <input type="button" name="Submit" onclick="javascript:history.back(-1);" value="返回上一页">
+            </td>
+            <td>
+                <a href="">前进</a><br>
+            </td>
+            <td colspan="" rowspan="" headers="">
+                <!--<input type="button" name="Submit" value="首页" onclick="javascript:history.go(127.0.0.1:5000)" />-->
+                <a href="/" target="_blank">首页</a>
+            </td>
+            <td>
+                <!--<a>欢迎，{{ contents }} !</a>-->
+                    {% for i in contents %}
+                        <p>
+                        {% if i == 7 %}
+                            欢迎 {{ i }}是7倍数{# 注意i也要用两个大括号 #}！
+                        {% else %}
+                            {{ pass }}
+                        {% endif %}
+                        </p>
+                    {% endfor %}
+
+            </td>
+        </tr>
+    </table>
+    <form action="login" method="get">
+        <tr>
+            <td>用户名:</td>
+            <td><input type="text" name="begin_time" /></td>
+        </tr>
+        <tr>
+            <td>密&nbsp&nbsp&nbsp码:</td>
+            <td><input type="text" name="end_time" /></td>
+        </tr>
+        <tr>
+            <input type="Submit" value="登录" />
+            <a href="#">注册</a>
+        </tr>
+    </form>
+    <h3>烨烨的详情排班表</h3>
+    <form action="yezi/2" method="get">
+        <input type="text" class="demo-input" placeholder="请选开始时间" id="test1" autocomplete="off" name="begin_time" >
+        <input type="text" class="demo-input" placeholder="请选结束时间" id="test2" autocomplete="off" name="end_time" >
+        <input type="Submit" value="提交" />
+    </form>
+    <h3>周末匹配烨烨的班次表</h3>
+    <form action="yezi/3" method="get">
+        <tr>
+            <td>开始时间:</td>
+            <td><input type="date" name="begin_time" value="2019-01-07" /></td>
+        </tr>
+        <tr>
+            <td>结束时间:</td>
+            <td><input type="date" name="end_time" value="2019-01-08" /></td>
+        </tr>
+        <input type="Submit" value="提交" />
+    </form>
+    <h3>周末匹配烨烨的班次表优化版</h3>
+    <form action="yezi/5" method="get">
+        <input type="text" class="demo-input" placeholder="请选择开始时间和结束时间" id="test8" autocomplete="off" name="time0" >
+        <input type="Submit" value="提交" />
+    </form>
+    <h3>salt使用1</h3>
+    <form action="salt/1" method="post">
+        <tr>
+            <td>salt：</td>
+            <select name="salt_v">
+                <option value ="salt1">33.50</option>
+                <option value ="salt2">100.66</option>
+                <option value ="salt3">52.20</option>
+                <option value ="salt4">101.66</option>
+                <option value ="salt5">19.89</option>
+            </select>
+        </tr>
+        <tr>
+            <td>源IP地址：</td>
+            <td><input type="text" name="minions" placeholder="请输入" ></td>
+        </tr>
+        <tr>
+            <td>salt模块：</td>
+            <select name="salt_method">
+                <option value ="cmd.run">cmd.run</option>
+                <option value ="test.ping">test.ping</option>
+                <option value ="cp.get_file">cp.get_file</option>
+            </select>
+        </tr>
+        <tr>
+            <td>执行命令：</td>
+            <td><input type="text" name="salt_params" placeholder="请输入" ></td>
+        </tr>
+        <input type="Submit" value="提交" />
+    </form>
+    <h3>端口扫描</h3>
+    <form action="salt/2" method="post">
+        <tr>
+            <td>salt：</td>
+            <select name="salt_v">
+                <option value ="salt2">100.66</option>
+                <option value ="salt1">33.50</option>
+                <option value ="salt3">52.20</option>
+                <option value ="salt4">101.66</option>
+                <option value ="salt5">19.89</option>
+            </select>
+        </tr>
+        <!--<tr>-->
+            <!--<td>salt模块：</td>-->
+            <!--<select name="salt_method">-->
+                <!--<option value ="network.connect">network.connect</option>-->
+                <!--<option value ="cp.get_file">cp.get_file</option>-->
+            <!--</select>-->
+        <!--</tr>-->
+        <tr>
+            <td>源IP地址：</td>
+            <td><input type="text" name="minions" placeholder="请输入" ></td>
+        </tr>
+        <tr>
+            <td>目标IP：</td>
+            <td><input type="text" name="salt_ip" placeholder="请输入" ></td>
+        <tr>
+        <tr>
+            <td>目标端口：</td>
+            <td><input type="text" name="salt_post" placeholder="请输入" ></td>
+        </tr>
+
+        <input type="Submit" value="提交" />
+    </form>
+
+    <h3>文件上传</h3>
+    <a href="upload">文件上传</a>
+    <form action="salt/3" method="post">
+        <tr>
+            <td>salt：</td>
+            <select name="salt_v">
+                <option value ="salt2">100.66</option>
+                <option value ="salt1">33.50</option>
+                <option value ="salt3">52.20</option>
+                <option value ="salt4">101.66</option>
+                <option value ="salt5">19.89</option>
+            </select>
+        </tr>
+        <!--<tr>-->
+            <!--<td>salt模块：</td>-->
+            <!--<select name="salt_method">-->
+                <!--<option value ="cp.get_file">cp.get_file</option>-->
+            <!--</select>-->
+        <!--</tr>-->
+        <tr>
+            <td>源IP地址：</td>
+            <td><input type="text" name="minions" placeholder="请输入" ></td>
+        </tr>
+        <tr>
+            <td>文件名：</td>
+            <td><input type="text" name="salt_ip" placeholder="请输入" ></td>
+        <tr>
+        <tr>
+            <td>目标文件路径：</td>
+            <td><input type="text" name="salt_post" placeholder="请输入" ></td>
+        </tr>
+
+        <input type="Submit" value="提交" />
+    </form>
+
+    <h3>查询数据</h3>
+    <form action="sql/4" method="get">
+        <input type="Submit" value="提交" />
+    </form>
+    <h3>查询数据1</h3>
+    <form action="sql/1" method="get">
+        <input type="Submit" value="提交" />
+    </form>
+    <h3>查询apollo</h3>
+    <form action="apollo" method="post">
+        <td><input type="text" name="ap_db_name" placeholder="请输入" ></td>
+        <input type="Submit" value="提交" />
+    </form>
+    <script src="js/laydate.js"></script> <!-- 改成你的路径 -->
+    <script>
+    lay('#version').html('-v'+ laydate.v);
+    //执行一个laydate实例
+    laydate.render({
+      elem: '#test1' //指定元素
+    });
+    </script>
+    <script>
+        //执行一个laydate实例
+        laydate.render({
+          elem: '#test8', //指定元素
+            range: true,
+            change: function(value, date){
+            console.log(value);
+        }
+        });
+        //执行一个laydate实例
+        laydate.render({
+          elem: '#test1', //指定元素
+            trigger: 'click'
+        });
+         //执行一个laydate实例
+        laydate.render({
+          elem: '#test2', //指定元素
+            trigger: 'click'
+        });
+    </script>
+</body>
+</html>
