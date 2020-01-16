@@ -1,4 +1,3 @@
-#!/usr/bin/python3
 # -*- coding: UTF-8 -*-
 import datetime
 # from datetime import datetime
@@ -25,7 +24,19 @@ from sqlalchemy import *
 import requests
 from bs4 import BeautifulSoup
 import city_dict
+import logging
 
+logging.basicConfig(level=logging.DEBUG,
+                    filename='logs/output.log',
+                    datefmt='%Y/%m/%d %H:%M:%S',
+                    format='%(asctime)s - %(name)s - %(levelname)s - %(lineno)d - %(module)s - %(message)s')
+logger = logging.getLogger(__name__)
+
+# Log
+logger.info('This is a log info')
+logger.debug('Debugging')
+logger.warning('Warning exists')
+logger.info('Finish')
 
 app = Flask(__name__,static_url_path='')
 #静态模板index.html等都放在‘/home/ronny/mywebsite/static/'下。　路由不用再加’/static/index.html‘而是'index.html'就好
@@ -97,25 +108,25 @@ def user(name):
 def welcome():
     params = request.form
     city = params.get('city')
-    print(city)
+    # print(city)
     cityname = '上海'
     city_name = city_dict.city_dict.get(cityname)
-    print(city_name)
+    # print(city_name)
     headers = {
         "User-Agent": "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.87 Safari/537.36",
     }
     # a=time.strftime('%Y.%m.%d %H:%M:%S', time.localtime(time.time()))
     resp1 = requests.get("https://api.lovelive.tools/api/SweetNothings")
     if resp1.status_code == 200:
-        print('获取土味情话...')
+        #print('获取土味情话...')
         b = resp1.text
     resp2 = requests.get('http://open.iciba.com/dsapi')
     if resp2.status_code == 200 :
-        print('获取格言信息（双语）...')
+        #print('获取格言信息（双语）...')
         conentJson = resp2.json()
         content = conentJson.get('content')
         note = conentJson.get('note')
-    print('获取天气信息...')
+    #print('获取天气信息...')
     weather_url = f'http://t.weather.sojson.com/api/weather/city/{city_name}'
     resp = requests.get(url=weather_url)
     if resp.status_code == 200:
@@ -146,17 +157,29 @@ def welcome():
     sysname = sys.platform
     return render_template('welcome.html', cityname=cityname,b=b, content=content, note=note  ,today_time=today_time,notice=notice,temperature=temperature,wind=wind,aqi=aqi,sysversion=sysversion,sysname=sysname)
 
-@app.route('/')
 @app.route('/index')
 @app.route('/index.html')
 def index():
     return render_template('index.html')
 
 #默认路径访问登录页面
-@app.route('/login')
-@app.route('/login.html')
-def login():
-    return render_template('login.html')
+# @app.route('/login', methods=['POST', 'GET'])
+@app.route('/')
+@app.route('/login.html', methods=['POST', 'GET'])
+def login_user():
+    form = request.form
+    if request.method == 'GET':
+        return render_template('login.html')
+    elif request.method == 'POST':
+        user = User.query.filter_by(login_name=form['login_name']).first()
+        # print(user)
+        if user is not None and user.passwd == form['passwd']:
+            # login_user(user)
+            # flash('登录成功')
+            return render_template('index.html',user=user ,login_name=form['login_name'] )
+        else:
+            # flash('用户或密码错误')
+            return render_template('login.html')
 
 #默认路径访问注册页面
 @app.route('/regist')
@@ -238,7 +261,7 @@ def salt_conn1():
     salt_method1 = myfrom['salt_method']
     salt_params1 = myfrom['salt_params']
     ret1 = salt.remote_execution_module(minions, salt_method1, salt_params1)
-    print(ret1)
+    # print(ret1)
     return jsonify(ret1)
 
 @app.route('/salt/2',methods=['post'])
@@ -291,7 +314,7 @@ def salt_conn3():
     salt_params1 = []
     salt_params1.append('salt://files/2/' + myfrom['salt_ip'])
     salt_params1.append(myfrom['salt_post'])
-    print(salt_params1)
+    # print(salt_params1)
     ret1 = salt.salt_command(minions, 'cp.get_file', salt_params1)
     return jsonify(ret1)
 
@@ -313,7 +336,7 @@ def start3():
     sql = "SELECT * FROM runoob_tbl"
     cur.execute(sql)
     u = cur.fetchall()
-    print(u)
+    # print(u)
     connect.close()
     return render_template('1.html', u=u)
 
@@ -322,7 +345,7 @@ def start3():
 def orderlist():
     params = request.args
     page = int(params.get('page', 1))
-    per_page = int(params.get('per_page', 10))
+    per_page = int(params.get('per_page', 20))
     start = params.get('start')
     end = params.get('end')
     if params.get('start') or params.get('end') or params.get('ap_env') or params.get('ap_w_url') or params.get('ap_r_url'):
@@ -332,7 +355,7 @@ def orderlist():
             ap_r_url = '%' + params.get('ap_r_url') + '%'
             paginate = Apollo.query.filter(Apollo.ap_env.like(ap_env)).filter(Apollo.ap_w_url.like(ap_w_url)).filter(Apollo.ap_r_url.like(ap_r_url)).order_by(desc('ap_id')).paginate(page, per_page, error_out=False)
             stus = paginate.items
-            print(stus)
+            # print(stus)
             len_s = len(stus)
             return render_template('order-list.html', paginate=paginate, stus=stus, len_s=len_s)
         else:
@@ -341,13 +364,13 @@ def orderlist():
             ap_r_url = '%' + params.get('ap_r_url') + '%'
             paginate = Apollo.query.filter(Apollo.ap_date_time.between(start, end)).filter(Apollo.ap_env.like(ap_env)).filter(Apollo.ap_w_url.like(ap_w_url)).filter(Apollo.ap_r_url.like(ap_r_url)).order_by(desc('ap_id')).paginate(page, per_page, error_out=False)
             stus = paginate.items
-            print(stus)
+            # print(stus)
             len_s = len(stus)
             return render_template('order-list.html', paginate=paginate, stus=stus, len_s=len_s)
     else:
         paginate = Apollo.query.order_by(desc('ap_id')).paginate(page, per_page, error_out=False)
         stus = paginate.items
-        print(stus)
+        # print(stus)
         len_s = len(stus)
         return render_template('order-list.html',paginate=paginate, stus=stus ,len_s=len_s)
 
@@ -360,10 +383,11 @@ def apollo_select():
     sql = ("SELECT * FROM ap WHERE ap_id= '%s';" %ap_id)
     cur.execute(sql)
     u = cur.fetchall()
-    print(u)
+    # print(u)
     str2 = baf.apolloF(u[0])
     a=('OPERATION.' + u[0]['ap_db_name'])
     print(str2.af())
+
     b = a + '<br>' + '<br>' + str2.af()
     connect.commit()
     return b
@@ -373,10 +397,10 @@ def apollo_select1():
     params  = request.args
     ap_id = params['ap_id']
     stu = Apollo.query.get(ap_id)
-    print(stu)
-    print(type(stu))
+    # print(stu)
+    # print(type(stu))
     a = jsonify(stu)
-    print(a)
+    # print(a)
     # print(json_stu)
     return '转化成功'
 
@@ -397,7 +421,7 @@ def apollo_update():
 def apollo_update2():
     if request.method == 'POST':
         my_from = request.form
-        print(my_from)
+        # print(my_from)
         ap_id = my_from['ap_id']
         env = my_from['env']
         db_name = my_from['db_name']
@@ -411,7 +435,7 @@ def apollo_update2():
         connect = pymysql.connect(**config.mysql_config)
         sql = (f"UPDATE ap SET ap_db_name = '{db_name}',ap_env='{env}',ap_w_url='{w_url}',ap_w_user='{w_user}',ap_w_passwd='{w_passwd}',  \
               ap_r_url='{r_url}',ap_r_user='{r_user}',ap_r_passwd='{r_passwd}',ap_str_date='{str_date}' WHERE ap_id = '{ap_id}' ")
-        print(sql)
+        # print(sql)
         cur = connect.cursor()
         cur.execute(sql)
         connect.commit()
@@ -424,7 +448,7 @@ def apollo_delete():
     connect = pymysql.connect(**config.mysql_config)
     cur = connect.cursor()
     sql = ("DELETE FROM ap WHERE ap_id= '%s';" %ap_id)
-    print(sql)
+    # print(sql)
     cur.execute(sql)
     connect.commit()
     return str('删除成功')
@@ -451,11 +475,13 @@ def apollo_insert():
         cur.execute(sql)
         #u = cur.fetchall()
         connect.commit()
+        logger.info(f'添加环境{env}的数据库信息{db_name}成功')
     return str('创建成功')
 
 # 使用装饰器的形式去捕获指定的错误码和异常
 @app.errorhandler(404)
 def page_not_found(error):
+    logger.error('Faild to get result', exc_info=True)
     return render_template('error.html'),404
 
 @app.route('/adminlist', methods=['POST', 'GET'])
@@ -470,20 +496,20 @@ def adminlist():
             loginname = '%' + params.get('login_name') + '%'
             paginate = User.query.filter(User.login_name.like(loginname)).order_by(desc('id')).paginate(page, per_page, error_out=False)
             stus = paginate.items
-            print(stus)
+            # print(stus)
             len_s = len(stus)
             return render_template('admin-list.html', paginate=paginate, stus=stus, len_s=len_s)
         else:
             loginname = '%'+params.get('login_name')+'%'
             paginate = User.query.filter(User.gen_time.between(start, end)).filter(User.login_name.like(loginname)).order_by(desc('id')).paginate(page, per_page, error_out=False)
             stus = paginate.items
-            print(stus)
+            # print(stus)
             len_s = len(stus)
             return render_template('admin-list.html', paginate=paginate, stus=stus, len_s=len_s)
     else:
         paginate = User.query.order_by(desc('id')).paginate(page, per_page, error_out=False)
         stus = paginate.items
-        print(stus)
+        # print(stus)
         len_s = len(stus)
         return render_template('admin-list.html',paginate=paginate, stus=stus ,len_s=len_s)
 
@@ -504,7 +530,7 @@ def admin_insert():
         xjt = User(login_name=login_name, passwd=passwd, phone=phone, email=email, gen_time=gen_time, role=role )
         db.session.add(xjt)
         db.session.commit()
-        print(xjt)
+        logger.info(f'添加用户{xjt.login_name}成功')
     return '200'
 
 @app.route('/adminedit',methods=['POST', 'GET'])
@@ -516,7 +542,7 @@ def adminedit():
         return render_template('admin-edit.html',ret=ret)
     elif request.method == 'POST':
         my_from = request.form
-        print(my_from)
+        # print(my_from)
         login_name = my_from['login_name']
         passwd = my_from['passwd']
         phone = my_from['phone']
@@ -528,9 +554,11 @@ def adminedit():
         ret.email = email
         ret.role = role
         db.session.commit()
-        print(ret)
+        # print(ret)
+        logger.info('修改成功')
         return '修改成功'
     else:
+        logger.info('方法不对')
         return '方法不对'
 
 @app.route('/admindel',methods=['POST', 'GET'])
@@ -540,6 +568,7 @@ def admindel():
         id = params.get('id')
         db.session.query(User).filter(User.id == id ).delete()
         db.session.commit()
+        logger.info(f'删除User表用户id:{id}成功')
         return '删除成功'
 
 if __name__=="__main__":

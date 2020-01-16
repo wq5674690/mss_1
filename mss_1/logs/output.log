@@ -1,0 +1,511 @@
+2019/12/26 17:22:32 - __main__ - INFO - 36 - app - This is a log info
+2019/12/26 17:22:32 - __main__ - DEBUG - 37 - app - Debugging
+2019/12/26 17:22:32 - __main__ - WARNING - 38 - app - Warning exists
+2019/12/26 17:22:32 - __main__ - INFO - 39 - app - Finish
+2019/12/26 17:22:32 - werkzeug - INFO - 88 - _internal -  * Running on http://0.0.0.0:6999/ (Press CTRL+C to quit)
+2019/12/26 17:22:32 - werkzeug - INFO - 88 - _internal -  * Restarting with stat
+2019/12/26 17:22:34 - __main__ - INFO - 36 - app - This is a log info
+2019/12/26 17:22:34 - __main__ - DEBUG - 37 - app - Debugging
+2019/12/26 17:22:34 - __main__ - WARNING - 38 - app - Warning exists
+2019/12/26 17:22:34 - __main__ - INFO - 39 - app - Finish
+2019/12/26 17:22:34 - werkzeug - WARNING - 88 - _internal -  * Debugger is active!
+2019/12/26 17:22:34 - werkzeug - INFO - 88 - _internal -  * Debugger PIN: 128-177-477
+2019/12/26 17:24:03 - werkzeug - INFO - 88 - _internal - 127.0.0.1 - - [26/Dec/2019 17:24:03] "GET / HTTP/1.1" 200 -
+2019/12/26 17:24:04 - werkzeug - INFO - 88 - _internal - 127.0.0.1 - - [26/Dec/2019 17:24:04] "GET /css/font.css HTTP/1.1" 200 -
+2019/12/26 17:24:04 - werkzeug - INFO - 88 - _internal - 127.0.0.1 - - [26/Dec/2019 17:24:04] "GET /css/login.css HTTP/1.1" 200 -
+2019/12/26 17:24:04 - werkzeug - INFO - 88 - _internal - 127.0.0.1 - - [26/Dec/2019 17:24:04] "GET /css/xadmin.css HTTP/1.1" 200 -
+2019/12/26 17:24:04 - werkzeug - INFO - 88 - _internal - 127.0.0.1 - - [26/Dec/2019 17:24:04] "GET /lib/layui/layui.js HTTP/1.1" 200 -
+2019/12/26 17:24:04 - werkzeug - INFO - 88 - _internal - 127.0.0.1 - - [26/Dec/2019 17:24:04] "GET /lib/layui/css/layui.css HTTP/1.1" 200 -
+2019/12/26 17:24:04 - werkzeug - INFO - 88 - _internal - 127.0.0.1 - - [26/Dec/2019 17:24:04] "GET /images/bg.png HTTP/1.1" 200 -
+2019/12/26 17:24:04 - werkzeug - INFO - 88 - _internal - 127.0.0.1 - - [26/Dec/2019 17:24:04] "GET /images/aiwrap.png HTTP/1.1" 200 -
+2019/12/26 17:24:05 - werkzeug - INFO - 88 - _internal - 127.0.0.1 - - [26/Dec/2019 17:24:05] "GET /favicon.ico HTTP/1.1" 404 -
+2019/12/26 17:24:10 - werkzeug - INFO - 88 - _internal - 127.0.0.1 - - [26/Dec/2019 17:24:10] "POST /login.html HTTP/1.1" 200 -
+2019/12/26 17:24:10 - werkzeug - INFO - 88 - _internal - 127.0.0.1 - - [26/Dec/2019 17:24:10] "GET /js/xadmin.js HTTP/1.1" 200 -
+2019/12/26 17:24:10 - werkzeug - INFO - 88 - _internal - 127.0.0.1 - - [26/Dec/2019 17:24:10] "GET /lib/layui/lay/modules/layer.js HTTP/1.1" 200 -
+2019/12/26 17:24:10 - urllib3.connectionpool - DEBUG - 824 - connectionpool - Starting new HTTPS connection (1): api.lovelive.tools
+2019/12/26 17:24:10 - urllib3.connectionpool - DEBUG - 396 - connectionpool - https://api.lovelive.tools:443 "GET /api/SweetNothings HTTP/1.1" 200 33
+2019/12/26 17:24:10 - urllib3.connectionpool - DEBUG - 208 - connectionpool - Starting new HTTP connection (1): open.iciba.com
+2019/12/26 17:24:10 - urllib3.connectionpool - DEBUG - 396 - connectionpool - http://open.iciba.com:80 "GET /dsapi HTTP/1.1" 301 178
+2019/12/26 17:24:10 - urllib3.connectionpool - DEBUG - 396 - connectionpool - http://open.iciba.com:80 "GET /dsapi/ HTTP/1.1" 200 None
+2019/12/26 17:24:10 - urllib3.connectionpool - DEBUG - 208 - connectionpool - Starting new HTTP connection (1): t.weather.sojson.com
+2019/12/26 17:24:11 - urllib3.connectionpool - DEBUG - 396 - connectionpool - http://t.weather.sojson.com:80 "GET /api/weather/city/101020100 HTTP/1.1" 200 None
+2019/12/26 17:24:11 - werkzeug - INFO - 88 - _internal - 127.0.0.1 - - [26/Dec/2019 17:24:11] "GET /welcome.html HTTP/1.1" 200 -
+2019/12/26 17:24:11 - werkzeug - INFO - 88 - _internal - 127.0.0.1 - - [26/Dec/2019 17:24:11] "GET /fonts/iconfont.woff HTTP/1.1" 200 -
+2019/12/26 17:24:11 - werkzeug - INFO - 88 - _internal - 127.0.0.1 - - [26/Dec/2019 17:24:11] "GET /lib/layui/font/iconfont.woff?v=240 HTTP/1.1" 200 -
+2019/12/26 17:24:11 - werkzeug - INFO - 88 - _internal - 127.0.0.1 - - [26/Dec/2019 17:24:11] "GET /lib/layui/css/modules/layer/default/layer.css?v=1.1 HTTP/1.1" 200 -
+2019/12/26 17:24:11 - werkzeug - INFO - 88 - _internal - 127.0.0.1 - - [26/Dec/2019 17:24:11] "GET /lib/layui/lay/modules/jquery.js HTTP/1.1" 200 -
+2019/12/26 17:24:11 - werkzeug - INFO - 88 - _internal - 127.0.0.1 - - [26/Dec/2019 17:24:11] "GET /js/xcity.js HTTP/1.1" 200 -
+2019/12/26 17:24:11 - werkzeug - INFO - 88 - _internal - 127.0.0.1 - - [26/Dec/2019 17:24:11] "GET /lib/layui/lay/modules/element.js HTTP/1.1" 200 -
+2019/12/26 17:24:11 - werkzeug - INFO - 88 - _internal - 127.0.0.1 - - [26/Dec/2019 17:24:11] "GET /lib/layui/lay/modules/form.js HTTP/1.1" 200 -
+2019/12/26 17:24:11 - werkzeug - INFO - 88 - _internal - 127.0.0.1 - - [26/Dec/2019 17:24:11] "GET /lib/layui/lay/modules/code.js HTTP/1.1" 200 -
+2019/12/26 17:24:11 - werkzeug - INFO - 88 - _internal - 127.0.0.1 - - [26/Dec/2019 17:24:11] "GET /lib/layui/css/modules/code.css HTTP/1.1" 200 -
+2019/12/26 17:25:41 - werkzeug - INFO - 88 - _internal -  * Running on http://0.0.0.0:6999/ (Press CTRL+C to quit)
+2019/12/26 17:25:41 - werkzeug - INFO - 88 - _internal -  * Restarting with stat
+2019/12/26 17:25:43 - werkzeug - WARNING - 88 - _internal -  * Debugger is active!
+2019/12/26 17:25:43 - werkzeug - INFO - 88 - _internal -  * Debugger PIN: 128-177-477
+2019/12/26 17:25:48 - werkzeug - INFO - 88 - _internal - 127.0.0.1 - - [26/Dec/2019 17:25:48] "POST /login.html HTTP/1.1" 200 -
+2019/12/26 17:25:49 - urllib3.connectionpool - DEBUG - 824 - connectionpool - Starting new HTTPS connection (1): api.lovelive.tools
+2019/12/26 17:25:49 - urllib3.connectionpool - DEBUG - 396 - connectionpool - https://api.lovelive.tools:443 "GET /api/SweetNothings HTTP/1.1" 200 42
+2019/12/26 17:25:49 - urllib3.connectionpool - DEBUG - 208 - connectionpool - Starting new HTTP connection (1): open.iciba.com
+2019/12/26 17:25:49 - urllib3.connectionpool - DEBUG - 396 - connectionpool - http://open.iciba.com:80 "GET /dsapi HTTP/1.1" 301 178
+2019/12/26 17:25:49 - urllib3.connectionpool - DEBUG - 396 - connectionpool - http://open.iciba.com:80 "GET /dsapi/ HTTP/1.1" 200 None
+2019/12/26 17:25:49 - urllib3.connectionpool - DEBUG - 208 - connectionpool - Starting new HTTP connection (1): t.weather.sojson.com
+2019/12/26 17:25:49 - urllib3.connectionpool - DEBUG - 396 - connectionpool - http://t.weather.sojson.com:80 "GET /api/weather/city/101020100 HTTP/1.1" 200 None
+2019/12/26 17:25:49 - werkzeug - INFO - 88 - _internal - 127.0.0.1 - - [26/Dec/2019 17:25:49] "GET /welcome.html HTTP/1.1" 200 -
+2019/12/26 17:28:00 - werkzeug - INFO - 88 - _internal -  * Detected change in '/Users/mengshishang/mms/file/demo/01-mss/mss_1/app.py', reloading
+2019/12/26 17:28:01 - werkzeug - INFO - 88 - _internal -  * Restarting with stat
+2019/12/26 17:28:06 - __main__ - INFO - 36 - app - This is a log info
+2019/12/26 17:28:06 - __main__ - DEBUG - 37 - app - Debugging
+2019/12/26 17:28:06 - __main__ - WARNING - 38 - app - Warning exists
+2019/12/26 17:28:06 - __main__ - INFO - 39 - app - Finish
+2019/12/26 17:28:06 - werkzeug - WARNING - 88 - _internal -  * Debugger is active!
+2019/12/26 17:28:06 - werkzeug - INFO - 88 - _internal -  * Debugger PIN: 128-177-477
+2019/12/26 17:28:32 - werkzeug - INFO - 88 - _internal - 127.0.0.1 - - [26/Dec/2019 17:28:32] "GET /adminlist HTTP/1.1" 200 -
+2019/12/26 17:28:33 - werkzeug - INFO - 88 - _internal - 127.0.0.1 - - [26/Dec/2019 17:28:33] "GET /lib/layui/lay/modules/laydate.js HTTP/1.1" 200 -
+2019/12/26 17:28:33 - werkzeug - INFO - 88 - _internal - 127.0.0.1 - - [26/Dec/2019 17:28:33] "GET /lib/layui/css/modules/laydate/default/laydate.css?v=5.0.9 HTTP/1.1" 200 -
+2019/12/26 17:28:37 - werkzeug - INFO - 88 - _internal - 127.0.0.1 - - [26/Dec/2019 17:28:37] "GET /order-list.html HTTP/1.1" 200 -
+2019/12/26 17:28:39 - werkzeug - INFO - 88 - _internal - 127.0.0.1 - - [26/Dec/2019 17:28:39] "GET /lib/layui/css/modules/layer/default/loading-1.gif HTTP/1.1" 200 -
+2019/12/26 17:28:39 - werkzeug - INFO - 88 - _internal - 127.0.0.1 - - [26/Dec/2019 17:28:39] "GET /apollo_select?ap_id=120 HTTP/1.1" 200 -
+2019/12/26 17:28:39 - werkzeug - INFO - 88 - _internal - 127.0.0.1 - - [26/Dec/2019 17:28:39] "GET /lib/layui/css/modules/layer/default/icon.png HTTP/1.1" 200 -
+2019/12/26 17:31:59 - werkzeug - INFO - 88 - _internal -  * Detected change in '/Users/mengshishang/mms/file/demo/01-mss/mss_1/app.py', reloading
+2019/12/26 17:31:59 - werkzeug - INFO - 88 - _internal -  * Restarting with stat
+2019/12/26 17:32:04 - __main__ - INFO - 36 - app - This is a log info
+2019/12/26 17:32:04 - __main__ - DEBUG - 37 - app - Debugging
+2019/12/26 17:32:04 - __main__ - WARNING - 38 - app - Warning exists
+2019/12/26 17:32:04 - __main__ - INFO - 39 - app - Finish
+2019/12/26 17:32:04 - werkzeug - WARNING - 88 - _internal -  * Debugger is active!
+2019/12/26 17:32:04 - werkzeug - INFO - 88 - _internal -  * Debugger PIN: 128-177-477
+2019/12/26 17:32:12 - werkzeug - INFO - 88 - _internal -  * Detected change in '/Users/mengshishang/mms/file/demo/01-mss/mss_1/app.py', reloading
+2019/12/26 17:32:13 - werkzeug - INFO - 88 - _internal -  * Restarting with stat
+2019/12/26 17:32:17 - __main__ - INFO - 36 - app - This is a log info
+2019/12/26 17:32:17 - __main__ - DEBUG - 37 - app - Debugging
+2019/12/26 17:32:17 - __main__ - WARNING - 38 - app - Warning exists
+2019/12/26 17:32:17 - __main__ - INFO - 39 - app - Finish
+2019/12/26 17:32:18 - werkzeug - WARNING - 88 - _internal -  * Debugger is active!
+2019/12/26 17:32:18 - werkzeug - INFO - 88 - _internal -  * Debugger PIN: 128-177-477
+2019/12/26 17:32:23 - __main__ - ERROR - 483 - app - Faild to get result
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/flask/app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/flask/app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/flask/helpers.py", line 928, in send_static_file
+    cache_timeout=cache_timeout)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/flask/helpers.py", line 674, in send_from_directory
+    raise NotFound()
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again.
+2019/12/26 17:32:23 - werkzeug - INFO - 88 - _internal - 127.0.0.1 - - [26/Dec/2019 17:32:23] "GET /error.html HTTP/1.1" 404 -
+2019/12/26 17:33:11 - werkzeug - INFO - 88 - _internal -  * Detected change in '/Users/mengshishang/mms/file/demo/01-mss/mss_1/app.py', reloading
+2019/12/26 17:33:12 - werkzeug - INFO - 88 - _internal -  * Restarting with stat
+2019/12/26 17:33:16 - __main__ - INFO - 36 - app - This is a log info
+2019/12/26 17:33:16 - __main__ - DEBUG - 37 - app - Debugging
+2019/12/26 17:33:16 - __main__ - WARNING - 38 - app - Warning exists
+2019/12/26 17:33:16 - __main__ - INFO - 39 - app - Finish
+2019/12/26 17:33:16 - werkzeug - WARNING - 88 - _internal -  * Debugger is active!
+2019/12/26 17:33:16 - werkzeug - INFO - 88 - _internal -  * Debugger PIN: 128-177-477
+2019/12/26 17:34:04 - werkzeug - INFO - 88 - _internal -  * Detected change in '/Users/mengshishang/mms/file/demo/01-mss/mss_1/app.py', reloading
+2019/12/26 17:34:04 - werkzeug - INFO - 88 - _internal -  * Restarting with stat
+2019/12/26 17:34:08 - __main__ - INFO - 36 - app - This is a log info
+2019/12/26 17:34:08 - __main__ - DEBUG - 37 - app - Debugging
+2019/12/26 17:34:08 - __main__ - WARNING - 38 - app - Warning exists
+2019/12/26 17:34:08 - __main__ - INFO - 39 - app - Finish
+2019/12/26 17:34:09 - werkzeug - WARNING - 88 - _internal -  * Debugger is active!
+2019/12/26 17:34:09 - werkzeug - INFO - 88 - _internal -  * Debugger PIN: 128-177-477
+2019/12/26 17:36:18 - werkzeug - INFO - 88 - _internal -  * Detected change in '/Users/mengshishang/mms/file/demo/01-mss/mss_1/app.py', reloading
+2019/12/26 17:36:19 - werkzeug - INFO - 88 - _internal -  * Restarting with stat
+2019/12/26 17:36:23 - __main__ - INFO - 36 - app - This is a log info
+2019/12/26 17:36:23 - __main__ - DEBUG - 37 - app - Debugging
+2019/12/26 17:36:23 - __main__ - WARNING - 38 - app - Warning exists
+2019/12/26 17:36:23 - __main__ - INFO - 39 - app - Finish
+2019/12/26 17:36:23 - werkzeug - WARNING - 88 - _internal -  * Debugger is active!
+2019/12/26 17:36:23 - werkzeug - INFO - 88 - _internal -  * Debugger PIN: 128-177-477
+2019/12/26 17:37:26 - werkzeug - INFO - 88 - _internal -  * Detected change in '/Users/mengshishang/mms/file/demo/01-mss/mss_1/app.py', reloading
+2019/12/26 17:37:26 - werkzeug - INFO - 88 - _internal -  * Restarting with stat
+2019/12/26 17:37:31 - __main__ - INFO - 36 - app - This is a log info
+2019/12/26 17:37:31 - __main__ - DEBUG - 37 - app - Debugging
+2019/12/26 17:37:31 - __main__ - WARNING - 38 - app - Warning exists
+2019/12/26 17:37:31 - __main__ - INFO - 39 - app - Finish
+2019/12/26 17:37:31 - werkzeug - WARNING - 88 - _internal -  * Debugger is active!
+2019/12/26 17:37:31 - werkzeug - INFO - 88 - _internal -  * Debugger PIN: 128-177-477
+2019/12/26 17:37:59 - __main__ - INFO - 570 - app - 删除User表用户27成功
+2019/12/26 17:37:59 - werkzeug - INFO - 88 - _internal - 127.0.0.1 - - [26/Dec/2019 17:37:59] "GET /admindel?id=27 HTTP/1.1" 200 -
+2019/12/26 17:38:02 - werkzeug - INFO - 88 - _internal - 127.0.0.1 - - [26/Dec/2019 17:38:02] "GET /adminlist?start=&end=&login_name= HTTP/1.1" 200 -
+2019/12/26 17:39:44 - werkzeug - INFO - 88 - _internal -  * Detected change in '/Users/mengshishang/mms/file/demo/01-mss/mss_1/app.py', reloading
+2019/12/26 17:39:45 - werkzeug - INFO - 88 - _internal -  * Restarting with stat
+2019/12/26 17:39:49 - __main__ - INFO - 36 - app - This is a log info
+2019/12/26 17:39:49 - __main__ - DEBUG - 37 - app - Debugging
+2019/12/26 17:39:49 - __main__ - WARNING - 38 - app - Warning exists
+2019/12/26 17:39:49 - __main__ - INFO - 39 - app - Finish
+2019/12/26 17:39:49 - werkzeug - WARNING - 88 - _internal -  * Debugger is active!
+2019/12/26 17:39:49 - werkzeug - INFO - 88 - _internal -  * Debugger PIN: 128-177-477
+2019/12/26 17:40:08 - werkzeug - INFO - 88 - _internal - 127.0.0.1 - - [26/Dec/2019 17:40:08] "GET /adminadd HTTP/1.1" 200 -
+2019/12/26 17:40:25 - __main__ - INFO - 532 - app - < 28, 'ly2', '123456', '18717848009', 'mengshishang@baofu.com', '管理员', datetime.datetime(2019, 12, 26, 17, 40, 24), False>
+2019/12/26 17:40:25 - werkzeug - INFO - 88 - _internal - 127.0.0.1 - - [26/Dec/2019 17:40:25] "GET /admininsert?login_name=ly2&phone=18717848009&email=mengshishang%40baofu.com&role=%E7%AE%A1%E7%90%86%E5%91%98&passwd=123456&repasswd=123456 HTTP/1.1" 200 -
+2019/12/26 17:40:29 - werkzeug - INFO - 88 - _internal - 127.0.0.1 - - [26/Dec/2019 17:40:29] "GET /adminlist?start=&end=&login_name= HTTP/1.1" 200 -
+2019/12/26 17:41:42 - werkzeug - INFO - 88 - _internal -  * Detected change in '/Users/mengshishang/mms/file/demo/01-mss/mss_1/app.py', reloading
+2019/12/26 17:41:42 - werkzeug - INFO - 88 - _internal -  * Restarting with stat
+2019/12/26 17:41:46 - __main__ - INFO - 36 - app - This is a log info
+2019/12/26 17:41:46 - __main__ - DEBUG - 37 - app - Debugging
+2019/12/26 17:41:46 - __main__ - WARNING - 38 - app - Warning exists
+2019/12/26 17:41:46 - __main__ - INFO - 39 - app - Finish
+2019/12/26 17:41:47 - werkzeug - WARNING - 88 - _internal -  * Debugger is active!
+2019/12/26 17:41:47 - werkzeug - INFO - 88 - _internal -  * Debugger PIN: 128-177-477
+2019/12/26 17:41:52 - werkzeug - INFO - 88 - _internal - 127.0.0.1 - - [26/Dec/2019 17:41:52] "GET /adminadd HTTP/1.1" 200 -
+2019/12/26 17:42:05 - __main__ - INFO - 532 - app - 添加ly3成功
+2019/12/26 17:42:05 - werkzeug - INFO - 88 - _internal - 127.0.0.1 - - [26/Dec/2019 17:42:05] "GET /admininsert?login_name=ly3&phone=18717848009&email=mengshishang%40baofu.com&role=%E7%AE%A1%E7%90%86%E5%91%98&passwd=123456&repasswd=123456 HTTP/1.1" 200 -
+2019/12/26 17:42:57 - werkzeug - INFO - 88 - _internal -  * Detected change in '/Users/mengshishang/mms/file/demo/01-mss/mss_1/app.py', reloading
+2019/12/26 17:42:57 - werkzeug - INFO - 88 - _internal -  * Restarting with stat
+2019/12/26 17:42:59 - __main__ - INFO - 36 - app - This is a log info
+2019/12/26 17:42:59 - __main__ - DEBUG - 37 - app - Debugging
+2019/12/26 17:42:59 - __main__ - WARNING - 38 - app - Warning exists
+2019/12/26 17:42:59 - __main__ - INFO - 39 - app - Finish
+2019/12/26 17:42:59 - werkzeug - WARNING - 88 - _internal -  * Debugger is active!
+2019/12/26 17:43:00 - werkzeug - INFO - 88 - _internal -  * Debugger PIN: 128-177-477
+2019/12/26 17:44:43 - werkzeug - INFO - 88 - _internal -  * Detected change in '/Users/mengshishang/mms/file/demo/01-mss/mss_1/app.py', reloading
+2019/12/26 17:44:43 - werkzeug - INFO - 88 - _internal -  * Restarting with stat
+2019/12/26 17:44:47 - __main__ - INFO - 36 - app - This is a log info
+2019/12/26 17:44:47 - __main__ - DEBUG - 37 - app - Debugging
+2019/12/26 17:44:47 - __main__ - WARNING - 38 - app - Warning exists
+2019/12/26 17:44:47 - __main__ - INFO - 39 - app - Finish
+2019/12/26 17:44:47 - werkzeug - WARNING - 88 - _internal -  * Debugger is active!
+2019/12/26 17:44:47 - werkzeug - INFO - 88 - _internal -  * Debugger PIN: 128-177-477
+2019/12/26 17:45:29 - werkzeug - INFO - 88 - _internal -  * Detected change in '/Users/mengshishang/mms/file/demo/01-mss/mss_1/app.py', reloading
+2019/12/26 17:45:29 - werkzeug - INFO - 88 - _internal -  * Restarting with stat
+2019/12/26 17:45:33 - __main__ - INFO - 36 - app - This is a log info
+2019/12/26 17:45:33 - __main__ - DEBUG - 37 - app - Debugging
+2019/12/26 17:45:33 - __main__ - WARNING - 38 - app - Warning exists
+2019/12/26 17:45:33 - __main__ - INFO - 39 - app - Finish
+2019/12/26 17:45:33 - werkzeug - WARNING - 88 - _internal -  * Debugger is active!
+2019/12/26 17:45:33 - werkzeug - INFO - 88 - _internal -  * Debugger PIN: 128-177-477
+2019/12/26 17:45:52 - werkzeug - INFO - 88 - _internal -  * Detected change in '/Users/mengshishang/mms/file/demo/01-mss/mss_1/app.py', reloading
+2019/12/26 17:45:53 - werkzeug - INFO - 88 - _internal -  * Restarting with stat
+2019/12/26 17:45:55 - __main__ - INFO - 36 - app - This is a log info
+2019/12/26 17:45:55 - __main__ - DEBUG - 37 - app - Debugging
+2019/12/26 17:45:55 - __main__ - WARNING - 38 - app - Warning exists
+2019/12/26 17:45:55 - __main__ - INFO - 39 - app - Finish
+2019/12/26 17:45:55 - werkzeug - WARNING - 88 - _internal -  * Debugger is active!
+2019/12/26 17:45:56 - werkzeug - INFO - 88 - _internal -  * Debugger PIN: 128-177-477
+2019/12/26 17:46:38 - werkzeug - INFO - 88 - _internal -  * Detected change in '/Users/mengshishang/mms/file/demo/01-mss/mss_1/app.py', reloading
+2019/12/26 17:46:38 - werkzeug - INFO - 88 - _internal -  * Restarting with stat
+2019/12/26 17:46:40 - __main__ - INFO - 36 - app - This is a log info
+2019/12/26 17:46:40 - __main__ - DEBUG - 37 - app - Debugging
+2019/12/26 17:46:40 - __main__ - WARNING - 38 - app - Warning exists
+2019/12/26 17:46:40 - __main__ - INFO - 39 - app - Finish
+2019/12/26 17:46:40 - werkzeug - WARNING - 88 - _internal -  * Debugger is active!
+2019/12/26 17:46:40 - werkzeug - INFO - 88 - _internal -  * Debugger PIN: 128-177-477
+2019/12/26 17:54:12 - __main__ - INFO - 36 - app - This is a log info
+2019/12/26 17:54:12 - __main__ - DEBUG - 37 - app - Debugging
+2019/12/26 17:54:12 - __main__ - WARNING - 38 - app - Warning exists
+2019/12/26 17:54:12 - __main__ - INFO - 39 - app - Finish
+2019/12/26 17:54:12 - werkzeug - INFO - 88 - _internal -  * Running on http://0.0.0.0:6999/ (Press CTRL+C to quit)
+2019/12/26 17:54:12 - werkzeug - INFO - 88 - _internal -  * Restarting with stat
+2019/12/26 17:54:15 - __main__ - INFO - 36 - app - This is a log info
+2019/12/26 17:54:15 - __main__ - DEBUG - 37 - app - Debugging
+2019/12/26 17:54:15 - __main__ - WARNING - 38 - app - Warning exists
+2019/12/26 17:54:15 - __main__ - INFO - 39 - app - Finish
+2019/12/26 17:54:15 - werkzeug - WARNING - 88 - _internal -  * Debugger is active!
+2019/12/26 17:54:15 - werkzeug - INFO - 88 - _internal -  * Debugger PIN: 128-177-477
+2019/12/26 17:54:23 - werkzeug - INFO - 88 - _internal - 127.0.0.1 - - [26/Dec/2019 17:54:23] "POST /login.html HTTP/1.1" 200 -
+2019/12/26 17:54:23 - urllib3.connectionpool - DEBUG - 824 - connectionpool - Starting new HTTPS connection (1): api.lovelive.tools
+2019/12/26 17:54:23 - urllib3.connectionpool - DEBUG - 396 - connectionpool - https://api.lovelive.tools:443 "GET /api/SweetNothings HTTP/1.1" 200 36
+2019/12/26 17:54:23 - urllib3.connectionpool - DEBUG - 208 - connectionpool - Starting new HTTP connection (1): open.iciba.com
+2019/12/26 17:54:24 - urllib3.connectionpool - DEBUG - 396 - connectionpool - http://open.iciba.com:80 "GET /dsapi HTTP/1.1" 301 178
+2019/12/26 17:54:24 - urllib3.connectionpool - DEBUG - 396 - connectionpool - http://open.iciba.com:80 "GET /dsapi/ HTTP/1.1" 200 None
+2019/12/26 17:54:24 - urllib3.connectionpool - DEBUG - 208 - connectionpool - Starting new HTTP connection (1): t.weather.sojson.com
+2019/12/26 17:54:24 - urllib3.connectionpool - DEBUG - 396 - connectionpool - http://t.weather.sojson.com:80 "GET /api/weather/city/101020100 HTTP/1.1" 200 None
+2019/12/26 17:54:24 - werkzeug - INFO - 88 - _internal - 127.0.0.1 - - [26/Dec/2019 17:54:24] "GET /welcome.html HTTP/1.1" 200 -
+2019/12/26 17:54:27 - werkzeug - INFO - 88 - _internal - 127.0.0.1 - - [26/Dec/2019 17:54:27] "GET /index.html HTTP/1.1" 200 -
+2019/12/26 17:54:27 - urllib3.connectionpool - DEBUG - 824 - connectionpool - Starting new HTTPS connection (1): api.lovelive.tools
+2019/12/26 17:54:27 - urllib3.connectionpool - DEBUG - 396 - connectionpool - https://api.lovelive.tools:443 "GET /api/SweetNothings HTTP/1.1" 200 45
+2019/12/26 17:54:27 - urllib3.connectionpool - DEBUG - 208 - connectionpool - Starting new HTTP connection (1): open.iciba.com
+2019/12/26 17:54:27 - urllib3.connectionpool - DEBUG - 396 - connectionpool - http://open.iciba.com:80 "GET /dsapi HTTP/1.1" 301 178
+2019/12/26 17:54:28 - urllib3.connectionpool - DEBUG - 396 - connectionpool - http://open.iciba.com:80 "GET /dsapi/ HTTP/1.1" 200 None
+2019/12/26 17:54:28 - urllib3.connectionpool - DEBUG - 208 - connectionpool - Starting new HTTP connection (1): t.weather.sojson.com
+2019/12/26 17:54:28 - urllib3.connectionpool - DEBUG - 396 - connectionpool - http://t.weather.sojson.com:80 "GET /api/weather/city/101020100 HTTP/1.1" 200 None
+2019/12/26 17:54:28 - werkzeug - INFO - 88 - _internal - 127.0.0.1 - - [26/Dec/2019 17:54:28] "GET /welcome.html HTTP/1.1" 200 -
+2019/12/31 16:05:00 - __main__ - INFO - 36 - app - This is a log info
+2019/12/31 16:05:00 - __main__ - DEBUG - 37 - app - Debugging
+2019/12/31 16:05:00 - __main__ - WARNING - 38 - app - Warning exists
+2019/12/31 16:05:00 - __main__ - INFO - 39 - app - Finish
+2019/12/31 16:05:00 - werkzeug - INFO - 88 - _internal -  * Running on http://0.0.0.0:6999/ (Press CTRL+C to quit)
+2019/12/31 16:05:00 - werkzeug - INFO - 88 - _internal -  * Restarting with stat
+2019/12/31 16:05:01 - __main__ - INFO - 36 - app - This is a log info
+2019/12/31 16:05:01 - __main__ - DEBUG - 37 - app - Debugging
+2019/12/31 16:05:01 - __main__ - WARNING - 38 - app - Warning exists
+2019/12/31 16:05:01 - __main__ - INFO - 39 - app - Finish
+2019/12/31 16:05:01 - werkzeug - WARNING - 88 - _internal -  * Debugger is active!
+2019/12/31 16:05:01 - werkzeug - INFO - 88 - _internal -  * Debugger PIN: 275-597-721
+2019/12/31 16:05:12 - werkzeug - INFO - 88 - _internal - 127.0.0.1 - - [31/Dec/2019 16:05:12] "GET / HTTP/1.1" 200 -
+2019/12/31 16:05:12 - werkzeug - INFO - 88 - _internal - 127.0.0.1 - - [31/Dec/2019 16:05:12] "GET /css/font.css HTTP/1.1" 200 -
+2019/12/31 16:05:12 - werkzeug - INFO - 88 - _internal - 127.0.0.1 - - [31/Dec/2019 16:05:12] "GET /css/login.css HTTP/1.1" 200 -
+2019/12/31 16:05:12 - werkzeug - INFO - 88 - _internal - 127.0.0.1 - - [31/Dec/2019 16:05:12] "GET /css/xadmin.css HTTP/1.1" 200 -
+2019/12/31 16:05:12 - werkzeug - INFO - 88 - _internal - 127.0.0.1 - - [31/Dec/2019 16:05:12] "GET /lib/layui/layui.js HTTP/1.1" 200 -
+2019/12/31 16:05:13 - werkzeug - INFO - 88 - _internal - 127.0.0.1 - - [31/Dec/2019 16:05:13] "GET /lib/layui/css/layui.css HTTP/1.1" 200 -
+2019/12/31 16:05:13 - werkzeug - INFO - 88 - _internal - 127.0.0.1 - - [31/Dec/2019 16:05:13] "GET /images/bg.png HTTP/1.1" 200 -
+2019/12/31 16:05:13 - werkzeug - INFO - 88 - _internal - 127.0.0.1 - - [31/Dec/2019 16:05:13] "GET /images/aiwrap.png HTTP/1.1" 200 -
+2019/12/31 16:05:13 - __main__ - ERROR - 484 - app - Faild to get result
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/flask/app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/flask/app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/flask/helpers.py", line 928, in send_static_file
+    cache_timeout=cache_timeout)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/flask/helpers.py", line 674, in send_from_directory
+    raise NotFound()
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again.
+2019/12/31 16:05:13 - werkzeug - INFO - 88 - _internal - 127.0.0.1 - - [31/Dec/2019 16:05:13] "GET /favicon.ico HTTP/1.1" 404 -
+2019/12/31 16:05:18 - werkzeug - INFO - 88 - _internal - 127.0.0.1 - - [31/Dec/2019 16:05:18] "POST /login.html HTTP/1.1" 200 -
+2019/12/31 16:05:18 - werkzeug - INFO - 88 - _internal - 127.0.0.1 - - [31/Dec/2019 16:05:18] "GET /js/xadmin.js HTTP/1.1" 200 -
+2019/12/31 16:05:18 - werkzeug - INFO - 88 - _internal - 127.0.0.1 - - [31/Dec/2019 16:05:18] "GET /lib/layui/lay/modules/layer.js HTTP/1.1" 200 -
+2019/12/31 16:05:19 - urllib3.connectionpool - DEBUG - 824 - connectionpool - Starting new HTTPS connection (1): api.lovelive.tools
+2019/12/31 16:05:19 - urllib3.connectionpool - DEBUG - 396 - connectionpool - https://api.lovelive.tools:443 "GET /api/SweetNothings HTTP/1.1" 200 36
+2019/12/31 16:05:19 - urllib3.connectionpool - DEBUG - 208 - connectionpool - Starting new HTTP connection (1): 127.0.0.1
+2019/12/31 16:05:19 - urllib3.connectionpool - DEBUG - 396 - connectionpool - http://127.0.0.1:1087 "GET http://open.iciba.com/dsapi HTTP/1.1" 301 178
+2019/12/31 16:05:19 - urllib3.connectionpool - DEBUG - 396 - connectionpool - http://127.0.0.1:1087 "GET http://open.iciba.com/dsapi/ HTTP/1.1" 200 None
+2019/12/31 16:05:19 - urllib3.connectionpool - DEBUG - 208 - connectionpool - Starting new HTTP connection (1): 127.0.0.1
+2019/12/31 16:05:19 - urllib3.connectionpool - DEBUG - 396 - connectionpool - http://127.0.0.1:1087 "GET http://t.weather.sojson.com/api/weather/city/101020100 HTTP/1.1" 200 None
+2019/12/31 16:05:19 - werkzeug - INFO - 88 - _internal - 127.0.0.1 - - [31/Dec/2019 16:05:19] "GET /welcome.html HTTP/1.1" 200 -
+2019/12/31 16:05:19 - werkzeug - INFO - 88 - _internal - 127.0.0.1 - - [31/Dec/2019 16:05:19] "GET /fonts/iconfont.woff HTTP/1.1" 200 -
+2019/12/31 16:05:19 - werkzeug - INFO - 88 - _internal - 127.0.0.1 - - [31/Dec/2019 16:05:19] "GET /lib/layui/css/modules/layer/default/layer.css?v=1.1 HTTP/1.1" 200 -
+2019/12/31 16:05:19 - werkzeug - INFO - 88 - _internal - 127.0.0.1 - - [31/Dec/2019 16:05:19] "GET /lib/layui/lay/modules/jquery.js HTTP/1.1" 200 -
+2019/12/31 16:05:19 - werkzeug - INFO - 88 - _internal - 127.0.0.1 - - [31/Dec/2019 16:05:19] "GET /lib/layui/font/iconfont.woff?v=240 HTTP/1.1" 200 -
+2019/12/31 16:05:19 - werkzeug - INFO - 88 - _internal - 127.0.0.1 - - [31/Dec/2019 16:05:19] "GET /js/xcity.js HTTP/1.1" 200 -
+2019/12/31 16:05:19 - werkzeug - INFO - 88 - _internal - 127.0.0.1 - - [31/Dec/2019 16:05:19] "GET /lib/layui/lay/modules/element.js HTTP/1.1" 200 -
+2019/12/31 16:05:19 - werkzeug - INFO - 88 - _internal - 127.0.0.1 - - [31/Dec/2019 16:05:19] "GET /lib/layui/lay/modules/form.js HTTP/1.1" 200 -
+2019/12/31 16:05:19 - werkzeug - INFO - 88 - _internal - 127.0.0.1 - - [31/Dec/2019 16:05:19] "GET /lib/layui/lay/modules/code.js HTTP/1.1" 200 -
+2019/12/31 16:05:19 - werkzeug - INFO - 88 - _internal - 127.0.0.1 - - [31/Dec/2019 16:05:19] "GET /lib/layui/css/modules/code.css HTTP/1.1" 200 -
+2019/12/31 16:05:22 - werkzeug - INFO - 88 - _internal - 127.0.0.1 - - [31/Dec/2019 16:05:22] "GET /order-list.html HTTP/1.1" 200 -
+2019/12/31 16:05:22 - werkzeug - INFO - 88 - _internal - 127.0.0.1 - - [31/Dec/2019 16:05:22] "GET /lib/layui/lay/modules/laydate.js HTTP/1.1" 200 -
+2019/12/31 16:05:22 - werkzeug - INFO - 88 - _internal - 127.0.0.1 - - [31/Dec/2019 16:05:22] "GET /lib/layui/css/modules/laydate/default/laydate.css?v=5.0.9 HTTP/1.1" 200 -
+2019/12/31 16:05:23 - werkzeug - INFO - 88 - _internal - 127.0.0.1 - - [31/Dec/2019 16:05:23] "GET /order-add.html HTTP/1.1" 200 -
+2019/12/31 16:05:23 - werkzeug - INFO - 88 - _internal - 127.0.0.1 - - [31/Dec/2019 16:05:23] "GET /lib/layui/css/modules/layer/default/loading-1.gif HTTP/1.1" 200 -
+2019/12/31 16:05:23 - werkzeug - INFO - 88 - _internal - 127.0.0.1 - - [31/Dec/2019 16:05:23] "GET /lib/layui/css/modules/layer/default/icon.png HTTP/1.1" 200 -
+2019/12/31 16:06:44 - __main__ - INFO - 478 - app - 添加环境pro的数据库信息AI_MP_STREAM成功
+2019/12/31 16:06:44 - werkzeug - INFO - 88 - _internal - 127.0.0.1 - - [31/Dec/2019 16:06:44] "POST /apollo_insert HTTP/1.1" 200 -
+2019/12/31 16:06:47 - werkzeug - INFO - 88 - _internal - 127.0.0.1 - - [31/Dec/2019 16:06:47] "GET /order-list.html?start=&end=&ap_env=&ap_w_url=&ap_r_url= HTTP/1.1" 200 -
+2019/12/31 16:06:50 - werkzeug - INFO - 88 - _internal - 127.0.0.1 - - [31/Dec/2019 16:06:50] "GET /apollo_select?ap_id=121 HTTP/1.1" 200 -
+2020/01/08 14:28:41 - __main__ - INFO - 36 - app - This is a log info
+2020/01/08 14:28:41 - __main__ - DEBUG - 37 - app - Debugging
+2020/01/08 14:28:41 - __main__ - WARNING - 38 - app - Warning exists
+2020/01/08 14:28:41 - __main__ - INFO - 39 - app - Finish
+2020/01/08 14:28:41 - werkzeug - INFO - 88 - _internal -  * Running on http://0.0.0.0:6999/ (Press CTRL+C to quit)
+2020/01/08 14:28:41 - werkzeug - INFO - 88 - _internal -  * Restarting with stat
+2020/01/08 14:28:43 - __main__ - INFO - 36 - app - This is a log info
+2020/01/08 14:28:43 - __main__ - DEBUG - 37 - app - Debugging
+2020/01/08 14:28:43 - __main__ - WARNING - 38 - app - Warning exists
+2020/01/08 14:28:43 - __main__ - INFO - 39 - app - Finish
+2020/01/08 14:28:43 - werkzeug - WARNING - 88 - _internal -  * Debugger is active!
+2020/01/08 14:28:43 - werkzeug - INFO - 88 - _internal -  * Debugger PIN: 128-177-477
+2020/01/08 14:28:51 - werkzeug - INFO - 88 - _internal - 127.0.0.1 - - [08/Jan/2020 14:28:51] "GET / HTTP/1.1" 200 -
+2020/01/08 14:28:51 - werkzeug - INFO - 88 - _internal - 127.0.0.1 - - [08/Jan/2020 14:28:51] "GET /css/font.css HTTP/1.1" 200 -
+2020/01/08 14:28:51 - werkzeug - INFO - 88 - _internal - 127.0.0.1 - - [08/Jan/2020 14:28:51] "GET /css/login.css HTTP/1.1" 200 -
+2020/01/08 14:28:51 - werkzeug - INFO - 88 - _internal - 127.0.0.1 - - [08/Jan/2020 14:28:51] "GET /css/xadmin.css HTTP/1.1" 200 -
+2020/01/08 14:28:51 - werkzeug - INFO - 88 - _internal - 127.0.0.1 - - [08/Jan/2020 14:28:51] "GET /lib/layui/layui.js HTTP/1.1" 200 -
+2020/01/08 14:28:51 - werkzeug - INFO - 88 - _internal - 127.0.0.1 - - [08/Jan/2020 14:28:51] "GET /lib/layui/css/layui.css HTTP/1.1" 200 -
+2020/01/08 14:28:51 - werkzeug - INFO - 88 - _internal - 127.0.0.1 - - [08/Jan/2020 14:28:51] "GET /images/bg.png HTTP/1.1" 200 -
+2020/01/08 14:28:51 - werkzeug - INFO - 88 - _internal - 127.0.0.1 - - [08/Jan/2020 14:28:51] "GET /images/aiwrap.png HTTP/1.1" 200 -
+2020/01/08 14:28:51 - __main__ - ERROR - 484 - app - Faild to get result
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/flask/app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/flask/app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/flask/helpers.py", line 928, in send_static_file
+    cache_timeout=cache_timeout)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/flask/helpers.py", line 674, in send_from_directory
+    raise NotFound()
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again.
+2020/01/08 14:28:51 - werkzeug - INFO - 88 - _internal - 127.0.0.1 - - [08/Jan/2020 14:28:51] "GET /favicon.ico HTTP/1.1" 404 -
+2020/01/08 14:28:54 - werkzeug - INFO - 88 - _internal - 127.0.0.1 - - [08/Jan/2020 14:28:54] "POST /login.html HTTP/1.1" 200 -
+2020/01/08 14:28:54 - werkzeug - INFO - 88 - _internal - 127.0.0.1 - - [08/Jan/2020 14:28:54] "GET /js/xadmin.js HTTP/1.1" 200 -
+2020/01/08 14:28:54 - werkzeug - INFO - 88 - _internal - 127.0.0.1 - - [08/Jan/2020 14:28:54] "GET /lib/layui/lay/modules/layer.js HTTP/1.1" 200 -
+2020/01/08 14:28:54 - werkzeug - INFO - 88 - _internal - 127.0.0.1 - - [08/Jan/2020 14:28:54] "GET /fonts/iconfont.woff HTTP/1.1" 200 -
+2020/01/08 14:28:54 - werkzeug - INFO - 88 - _internal - 127.0.0.1 - - [08/Jan/2020 14:28:54] "GET /lib/layui/font/iconfont.svg?v=240 HTTP/1.1" 200 -
+2020/01/08 14:28:54 - werkzeug - INFO - 88 - _internal - 127.0.0.1 - - [08/Jan/2020 14:28:54] "GET /lib/layui/css/modules/layer/default/layer.css?v=1.1 HTTP/1.1" 200 -
+2020/01/08 14:28:54 - werkzeug - INFO - 88 - _internal - 127.0.0.1 - - [08/Jan/2020 14:28:54] "GET /lib/layui/lay/modules/jquery.js HTTP/1.1" 200 -
+2020/01/08 14:28:54 - urllib3.connectionpool - DEBUG - 824 - connectionpool - Starting new HTTPS connection (1): api.lovelive.tools
+2020/01/08 14:28:55 - urllib3.connectionpool - DEBUG - 396 - connectionpool - https://api.lovelive.tools:443 "GET /api/SweetNothings HTTP/1.1" 200 97
+2020/01/08 14:28:55 - urllib3.connectionpool - DEBUG - 208 - connectionpool - Starting new HTTP connection (1): open.iciba.com
+2020/01/08 14:28:55 - urllib3.connectionpool - DEBUG - 396 - connectionpool - http://open.iciba.com:80 "GET /dsapi HTTP/1.1" 301 178
+2020/01/08 14:28:55 - urllib3.connectionpool - DEBUG - 396 - connectionpool - http://open.iciba.com:80 "GET /dsapi/ HTTP/1.1" 200 None
+2020/01/08 14:28:55 - urllib3.connectionpool - DEBUG - 208 - connectionpool - Starting new HTTP connection (1): t.weather.sojson.com
+2020/01/08 14:28:55 - urllib3.connectionpool - DEBUG - 396 - connectionpool - http://t.weather.sojson.com:80 "GET /api/weather/city/101020100 HTTP/1.1" 200 None
+2020/01/08 14:28:55 - werkzeug - INFO - 88 - _internal - 127.0.0.1 - - [08/Jan/2020 14:28:55] "GET /welcome.html HTTP/1.1" 200 -
+2020/01/08 14:28:55 - werkzeug - INFO - 88 - _internal - 127.0.0.1 - - [08/Jan/2020 14:28:55] "GET /lib/layui/font/iconfont.woff?v=240 HTTP/1.1" 200 -
+2020/01/08 14:28:55 - werkzeug - INFO - 88 - _internal - 127.0.0.1 - - [08/Jan/2020 14:28:55] "GET /lib/layui/lay/modules/element.js HTTP/1.1" 200 -
+2020/01/08 14:28:55 - werkzeug - INFO - 88 - _internal - 127.0.0.1 - - [08/Jan/2020 14:28:55] "GET /js/xcity.js HTTP/1.1" 200 -
+2020/01/08 14:28:55 - werkzeug - INFO - 88 - _internal - 127.0.0.1 - - [08/Jan/2020 14:28:55] "GET /lib/layui/lay/modules/form.js HTTP/1.1" 200 -
+2020/01/08 14:28:55 - werkzeug - INFO - 88 - _internal - 127.0.0.1 - - [08/Jan/2020 14:28:55] "GET /lib/layui/lay/modules/code.js HTTP/1.1" 200 -
+2020/01/08 14:28:55 - werkzeug - INFO - 88 - _internal - 127.0.0.1 - - [08/Jan/2020 14:28:55] "GET /lib/layui/css/modules/code.css HTTP/1.1" 200 -
+2020/01/08 14:28:55 - __main__ - ERROR - 484 - app - Faild to get result
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/flask/app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/flask/app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/flask/helpers.py", line 928, in send_static_file
+    cache_timeout=cache_timeout)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/flask/helpers.py", line 674, in send_from_directory
+    raise NotFound()
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again.
+2020/01/08 14:28:55 - werkzeug - INFO - 88 - _internal - 127.0.0.1 - - [08/Jan/2020 14:28:55] "GET /favicon.ico HTTP/1.1" 404 -
+2020/01/08 14:28:57 - werkzeug - INFO - 88 - _internal - 127.0.0.1 - - [08/Jan/2020 14:28:57] "GET /order-list.html HTTP/1.1" 200 -
+2020/01/08 14:28:57 - werkzeug - INFO - 88 - _internal - 127.0.0.1 - - [08/Jan/2020 14:28:57] "GET /lib/layui/lay/modules/laydate.js HTTP/1.1" 200 -
+2020/01/08 14:28:57 - werkzeug - INFO - 88 - _internal - 127.0.0.1 - - [08/Jan/2020 14:28:57] "GET /lib/layui/css/modules/laydate/default/laydate.css?v=5.0.9 HTTP/1.1" 200 -
+2020/01/08 14:29:12 - werkzeug - INFO - 88 - _internal - 127.0.0.1 - - [08/Jan/2020 14:29:12] "GET /lib/layui/css/modules/layer/default/loading-1.gif HTTP/1.1" 200 -
+2020/01/08 14:29:12 - werkzeug - INFO - 88 - _internal - 127.0.0.1 - - [08/Jan/2020 14:29:12] "GET /lib/layui/css/modules/layer/default/icon.png HTTP/1.1" 200 -
+2020/01/08 14:29:12 - werkzeug - INFO - 88 - _internal - 127.0.0.1 - - [08/Jan/2020 14:29:12] "GET /order-add.html HTTP/1.1" 200 -
+2020/01/08 14:38:28 - __main__ - INFO - 478 - app - 添加环境pro的数据库信息CFUNR_CIF成功
+2020/01/08 14:38:28 - werkzeug - INFO - 88 - _internal - 127.0.0.1 - - [08/Jan/2020 14:38:28] "POST /apollo_insert HTTP/1.1" 200 -
+2020/01/08 14:38:30 - werkzeug - INFO - 88 - _internal - 127.0.0.1 - - [08/Jan/2020 14:38:30] "GET /order-add.html HTTP/1.1" 200 -
+2020/01/08 14:38:58 - __main__ - INFO - 478 - app - 添加环境pro的数据库信息CFUNR_AUC成功
+2020/01/08 14:38:58 - werkzeug - INFO - 88 - _internal - 127.0.0.1 - - [08/Jan/2020 14:38:58] "POST /apollo_insert HTTP/1.1" 200 -
+2020/01/08 14:39:00 - werkzeug - INFO - 88 - _internal - 127.0.0.1 - - [08/Jan/2020 14:39:00] "GET /order-add.html HTTP/1.1" 200 -
+2020/01/08 14:39:25 - __main__ - INFO - 478 - app - 添加环境pro的数据库信息CFUNR_MANAGER成功
+2020/01/08 14:39:25 - werkzeug - INFO - 88 - _internal - 127.0.0.1 - - [08/Jan/2020 14:39:25] "POST /apollo_insert HTTP/1.1" 200 -
+2020/01/08 14:39:27 - werkzeug - INFO - 88 - _internal - 127.0.0.1 - - [08/Jan/2020 14:39:27] "GET /order-list.html?start=&end=&ap_env=&ap_w_url=&ap_r_url= HTTP/1.1" 200 -
+2020/01/08 14:42:21 - werkzeug - INFO - 88 - _internal - 127.0.0.1 - - [08/Jan/2020 14:42:21] "GET /apollo_select?ap_id=124 HTTP/1.1" 200 -
+2020/01/08 14:42:39 - werkzeug - INFO - 88 - _internal - 127.0.0.1 - - [08/Jan/2020 14:42:39] "GET /apollo_select?ap_id=123 HTTP/1.1" 200 -
+2020/01/08 14:43:52 - werkzeug - INFO - 88 - _internal - 127.0.0.1 - - [08/Jan/2020 14:43:52] "GET /apollo_select?ap_id=122 HTTP/1.1" 200 -
+2020/01/08 14:48:30 - werkzeug - INFO - 88 - _internal - 127.0.0.1 - - [08/Jan/2020 14:48:30] "GET /apollo_select?ap_id=124 HTTP/1.1" 200 -
+2020/01/16 13:58:44 - __main__ - INFO - 36 - app - This is a log info
+2020/01/16 13:58:44 - __main__ - DEBUG - 37 - app - Debugging
+2020/01/16 13:58:44 - __main__ - WARNING - 38 - app - Warning exists
+2020/01/16 13:58:44 - __main__ - INFO - 39 - app - Finish
+2020/01/16 13:58:44 - werkzeug - INFO - 88 - _internal -  * Running on http://0.0.0.0:6999/ (Press CTRL+C to quit)
+2020/01/16 13:58:44 - werkzeug - INFO - 88 - _internal -  * Restarting with stat
+2020/01/16 13:58:45 - __main__ - INFO - 36 - app - This is a log info
+2020/01/16 13:58:45 - __main__ - DEBUG - 37 - app - Debugging
+2020/01/16 13:58:45 - __main__ - WARNING - 38 - app - Warning exists
+2020/01/16 13:58:45 - __main__ - INFO - 39 - app - Finish
+2020/01/16 13:58:45 - werkzeug - WARNING - 88 - _internal -  * Debugger is active!
+2020/01/16 13:58:45 - werkzeug - INFO - 88 - _internal -  * Debugger PIN: 128-177-477
+2020/01/16 13:58:59 - werkzeug - INFO - 88 - _internal - 127.0.0.1 - - [16/Jan/2020 13:58:59] "GET / HTTP/1.1" 200 -
+2020/01/16 13:58:59 - werkzeug - INFO - 88 - _internal - 127.0.0.1 - - [16/Jan/2020 13:58:59] "GET /css/font.css HTTP/1.1" 200 -
+2020/01/16 13:58:59 - werkzeug - INFO - 88 - _internal - 127.0.0.1 - - [16/Jan/2020 13:58:59] "GET /css/login.css HTTP/1.1" 200 -
+2020/01/16 13:58:59 - werkzeug - INFO - 88 - _internal - 127.0.0.1 - - [16/Jan/2020 13:58:59] "GET /css/xadmin.css HTTP/1.1" 200 -
+2020/01/16 13:58:59 - werkzeug - INFO - 88 - _internal - 127.0.0.1 - - [16/Jan/2020 13:58:59] "GET /lib/layui/layui.js HTTP/1.1" 200 -
+2020/01/16 13:58:59 - werkzeug - INFO - 88 - _internal - 127.0.0.1 - - [16/Jan/2020 13:58:59] "GET /lib/layui/css/layui.css HTTP/1.1" 200 -
+2020/01/16 13:59:00 - werkzeug - INFO - 88 - _internal - 127.0.0.1 - - [16/Jan/2020 13:59:00] "GET /images/bg.png HTTP/1.1" 200 -
+2020/01/16 13:59:00 - werkzeug - INFO - 88 - _internal - 127.0.0.1 - - [16/Jan/2020 13:59:00] "GET /images/aiwrap.png HTTP/1.1" 200 -
+2020/01/16 13:59:00 - __main__ - ERROR - 484 - app - Faild to get result
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/flask/app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/flask/app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/flask/helpers.py", line 928, in send_static_file
+    cache_timeout=cache_timeout)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/flask/helpers.py", line 674, in send_from_directory
+    raise NotFound()
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again.
+2020/01/16 13:59:00 - werkzeug - INFO - 88 - _internal - 127.0.0.1 - - [16/Jan/2020 13:59:00] "GET /apple-touch-icon-precomposed.png HTTP/1.1" 404 -
+2020/01/16 13:59:00 - __main__ - ERROR - 484 - app - Faild to get result
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/flask/app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/flask/app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/flask/helpers.py", line 928, in send_static_file
+    cache_timeout=cache_timeout)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/flask/helpers.py", line 674, in send_from_directory
+    raise NotFound()
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again.
+2020/01/16 13:59:00 - werkzeug - INFO - 88 - _internal - 127.0.0.1 - - [16/Jan/2020 13:59:00] "GET /apple-touch-icon.png HTTP/1.1" 404 -
+2020/01/16 13:59:00 - __main__ - ERROR - 484 - app - Faild to get result
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/flask/app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/flask/app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/flask/helpers.py", line 928, in send_static_file
+    cache_timeout=cache_timeout)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/flask/helpers.py", line 674, in send_from_directory
+    raise NotFound()
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again.
+2020/01/16 13:59:00 - werkzeug - INFO - 88 - _internal - 127.0.0.1 - - [16/Jan/2020 13:59:00] "GET /favicon.ico HTTP/1.1" 404 -
+2020/01/16 13:59:03 - werkzeug - INFO - 88 - _internal - 127.0.0.1 - - [16/Jan/2020 13:59:03] "POST /login.html HTTP/1.1" 200 -
+2020/01/16 13:59:03 - werkzeug - INFO - 88 - _internal - 127.0.0.1 - - [16/Jan/2020 13:59:03] "GET /js/xadmin.js HTTP/1.1" 200 -
+2020/01/16 13:59:03 - werkzeug - INFO - 88 - _internal - 127.0.0.1 - - [16/Jan/2020 13:59:03] "GET /lib/layui/lay/modules/layer.js HTTP/1.1" 200 -
+2020/01/16 13:59:03 - urllib3.connectionpool - DEBUG - 824 - connectionpool - Starting new HTTPS connection (1): api.lovelive.tools
+2020/01/16 13:59:03 - urllib3.connectionpool - DEBUG - 396 - connectionpool - https://api.lovelive.tools:443 "GET /api/SweetNothings HTTP/1.1" 200 123
+2020/01/16 13:59:03 - urllib3.connectionpool - DEBUG - 208 - connectionpool - Starting new HTTP connection (1): 127.0.0.1
+2020/01/16 13:59:03 - urllib3.connectionpool - DEBUG - 396 - connectionpool - http://127.0.0.1:1087 "GET http://open.iciba.com/dsapi HTTP/1.1" 301 178
+2020/01/16 13:59:03 - urllib3.connectionpool - DEBUG - 396 - connectionpool - http://127.0.0.1:1087 "GET http://open.iciba.com/dsapi/ HTTP/1.1" 200 None
+2020/01/16 13:59:03 - urllib3.connectionpool - DEBUG - 208 - connectionpool - Starting new HTTP connection (1): 127.0.0.1
+2020/01/16 13:59:03 - urllib3.connectionpool - DEBUG - 396 - connectionpool - http://127.0.0.1:1087 "GET http://t.weather.sojson.com/api/weather/city/101020100 HTTP/1.1" 200 None
+2020/01/16 13:59:03 - werkzeug - INFO - 88 - _internal - 127.0.0.1 - - [16/Jan/2020 13:59:03] "GET /welcome.html HTTP/1.1" 200 -
+2020/01/16 13:59:03 - werkzeug - INFO - 88 - _internal - 127.0.0.1 - - [16/Jan/2020 13:59:03] "GET /fonts/iconfont.woff HTTP/1.1" 200 -
+2020/01/16 13:59:03 - werkzeug - INFO - 88 - _internal - 127.0.0.1 - - [16/Jan/2020 13:59:03] "GET /lib/layui/font/iconfont.svg?v=240 HTTP/1.1" 200 -
+2020/01/16 13:59:03 - werkzeug - INFO - 88 - _internal - 127.0.0.1 - - [16/Jan/2020 13:59:03] "GET /lib/layui/css/modules/layer/default/layer.css?v=1.1 HTTP/1.1" 200 -
+2020/01/16 13:59:03 - werkzeug - INFO - 88 - _internal - 127.0.0.1 - - [16/Jan/2020 13:59:03] "GET /lib/layui/lay/modules/jquery.js HTTP/1.1" 200 -
+2020/01/16 13:59:03 - werkzeug - INFO - 88 - _internal - 127.0.0.1 - - [16/Jan/2020 13:59:03] "GET /js/xcity.js HTTP/1.1" 200 -
+2020/01/16 13:59:03 - werkzeug - INFO - 88 - _internal - 127.0.0.1 - - [16/Jan/2020 13:59:03] "GET /lib/layui/lay/modules/element.js HTTP/1.1" 200 -
+2020/01/16 13:59:03 - werkzeug - INFO - 88 - _internal - 127.0.0.1 - - [16/Jan/2020 13:59:03] "GET /lib/layui/lay/modules/form.js HTTP/1.1" 200 -
+2020/01/16 13:59:03 - werkzeug - INFO - 88 - _internal - 127.0.0.1 - - [16/Jan/2020 13:59:03] "GET /lib/layui/font/iconfont.woff?v=240 HTTP/1.1" 200 -
+2020/01/16 13:59:03 - werkzeug - INFO - 88 - _internal - 127.0.0.1 - - [16/Jan/2020 13:59:03] "GET /lib/layui/lay/modules/code.js HTTP/1.1" 200 -
+2020/01/16 13:59:03 - werkzeug - INFO - 88 - _internal - 127.0.0.1 - - [16/Jan/2020 13:59:03] "GET /lib/layui/css/modules/code.css HTTP/1.1" 200 -
+2020/01/16 13:59:03 - __main__ - ERROR - 484 - app - Faild to get result
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/flask/app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/flask/app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/flask/helpers.py", line 928, in send_static_file
+    cache_timeout=cache_timeout)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/flask/helpers.py", line 674, in send_from_directory
+    raise NotFound()
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again.
+2020/01/16 13:59:03 - werkzeug - INFO - 88 - _internal - 127.0.0.1 - - [16/Jan/2020 13:59:03] "GET /favicon.ico HTTP/1.1" 404 -
+2020/01/16 13:59:16 - werkzeug - INFO - 88 - _internal - 127.0.0.1 - - [16/Jan/2020 13:59:16] "GET /order-list.html HTTP/1.1" 200 -
+2020/01/16 13:59:16 - werkzeug - INFO - 88 - _internal - 127.0.0.1 - - [16/Jan/2020 13:59:16] "GET /lib/layui/lay/modules/laydate.js HTTP/1.1" 200 -
+2020/01/16 13:59:16 - werkzeug - INFO - 88 - _internal - 127.0.0.1 - - [16/Jan/2020 13:59:16] "GET /lib/layui/css/modules/laydate/default/laydate.css?v=5.0.9 HTTP/1.1" 200 -
+2020/01/16 13:59:48 - werkzeug - INFO - 88 - _internal - 127.0.0.1 - - [16/Jan/2020 13:59:48] "GET /lib/layui/css/modules/layer/default/loading-1.gif HTTP/1.1" 200 -
+2020/01/16 13:59:48 - werkzeug - INFO - 88 - _internal - 127.0.0.1 - - [16/Jan/2020 13:59:48] "GET /lib/layui/css/modules/layer/default/icon.png HTTP/1.1" 200 -
+2020/01/16 13:59:48 - werkzeug - INFO - 88 - _internal - 127.0.0.1 - - [16/Jan/2020 13:59:48] "GET /order-add.html HTTP/1.1" 200 -
+2020/01/16 14:00:26 - __main__ - INFO - 478 - app - 添加环境pro的数据库信息LOAN_MONITOR成功
+2020/01/16 14:00:26 - werkzeug - INFO - 88 - _internal - 127.0.0.1 - - [16/Jan/2020 14:00:26] "POST /apollo_insert HTTP/1.1" 200 -
+2020/01/16 14:00:28 - werkzeug - INFO - 88 - _internal - 127.0.0.1 - - [16/Jan/2020 14:00:28] "GET /order-list.html?start=&end=&ap_env=&ap_w_url=&ap_r_url= HTTP/1.1" 200 -
+2020/01/16 14:05:21 - __main__ - INFO - 36 - app - This is a log info
+2020/01/16 14:05:21 - __main__ - DEBUG - 37 - app - Debugging
+2020/01/16 14:05:21 - __main__ - WARNING - 38 - app - Warning exists
+2020/01/16 14:05:21 - __main__ - INFO - 39 - app - Finish
+2020/01/16 14:05:21 - werkzeug - INFO - 88 - _internal -  * Running on http://0.0.0.0:6999/ (Press CTRL+C to quit)
+2020/01/16 14:05:21 - werkzeug - INFO - 88 - _internal -  * Restarting with stat
+2020/01/16 14:05:22 - __main__ - INFO - 36 - app - This is a log info
+2020/01/16 14:05:22 - __main__ - DEBUG - 37 - app - Debugging
+2020/01/16 14:05:22 - __main__ - WARNING - 38 - app - Warning exists
+2020/01/16 14:05:22 - __main__ - INFO - 39 - app - Finish
+2020/01/16 14:05:22 - werkzeug - WARNING - 88 - _internal -  * Debugger is active!
+2020/01/16 14:05:22 - werkzeug - INFO - 88 - _internal -  * Debugger PIN: 128-177-477
+2020/01/16 14:05:28 - werkzeug - INFO - 88 - _internal - 127.0.0.1 - - [16/Jan/2020 14:05:28] "GET /login.html HTTP/1.1" 200 -
+2020/01/16 14:05:28 - werkzeug - INFO - 88 - _internal - 127.0.0.1 - - [16/Jan/2020 14:05:28] "GET /css/font.css HTTP/1.1" 200 -
+2020/01/16 14:05:28 - werkzeug - INFO - 88 - _internal - 127.0.0.1 - - [16/Jan/2020 14:05:28] "GET /css/login.css HTTP/1.1" 200 -
+2020/01/16 14:05:28 - werkzeug - INFO - 88 - _internal - 127.0.0.1 - - [16/Jan/2020 14:05:28] "GET /css/xadmin.css HTTP/1.1" 200 -
+2020/01/16 14:05:28 - werkzeug - INFO - 88 - _internal - 127.0.0.1 - - [16/Jan/2020 14:05:28] "GET /lib/layui/layui.js HTTP/1.1" 200 -
+2020/01/16 14:05:28 - werkzeug - INFO - 88 - _internal - 127.0.0.1 - - [16/Jan/2020 14:05:28] "GET /lib/layui/css/layui.css HTTP/1.1" 200 -
+2020/01/16 14:05:28 - werkzeug - INFO - 88 - _internal - 127.0.0.1 - - [16/Jan/2020 14:05:28] "GET /images/bg.png HTTP/1.1" 200 -
+2020/01/16 14:05:28 - werkzeug - INFO - 88 - _internal - 127.0.0.1 - - [16/Jan/2020 14:05:28] "GET /images/aiwrap.png HTTP/1.1" 200 -
+2020/01/16 14:05:28 - werkzeug - INFO - 88 - _internal - 127.0.0.1 - - [16/Jan/2020 14:05:28] "GET /css/login.css HTTP/1.1" 200 -
+2020/01/16 14:05:30 - werkzeug - INFO - 88 - _internal - 127.0.0.1 - - [16/Jan/2020 14:05:30] "POST /login.html HTTP/1.1" 200 -
+2020/01/16 14:05:30 - urllib3.connectionpool - DEBUG - 824 - connectionpool - Starting new HTTPS connection (1): api.lovelive.tools
+2020/01/16 14:05:30 - urllib3.connectionpool - DEBUG - 396 - connectionpool - https://api.lovelive.tools:443 "GET /api/SweetNothings HTTP/1.1" 200 51
+2020/01/16 14:05:30 - urllib3.connectionpool - DEBUG - 208 - connectionpool - Starting new HTTP connection (1): 127.0.0.1
+2020/01/16 14:05:30 - urllib3.connectionpool - DEBUG - 396 - connectionpool - http://127.0.0.1:1087 "GET http://open.iciba.com/dsapi HTTP/1.1" 301 178
+2020/01/16 14:05:30 - urllib3.connectionpool - DEBUG - 396 - connectionpool - http://127.0.0.1:1087 "GET http://open.iciba.com/dsapi/ HTTP/1.1" 200 None
+2020/01/16 14:05:30 - urllib3.connectionpool - DEBUG - 208 - connectionpool - Starting new HTTP connection (1): 127.0.0.1
+2020/01/16 14:05:30 - urllib3.connectionpool - DEBUG - 396 - connectionpool - http://127.0.0.1:1087 "GET http://t.weather.sojson.com/api/weather/city/101020100 HTTP/1.1" 200 None
+2020/01/16 14:05:30 - werkzeug - INFO - 88 - _internal - 127.0.0.1 - - [16/Jan/2020 14:05:30] "GET /welcome.html HTTP/1.1" 200 -
+2020/01/16 14:05:32 - werkzeug - INFO - 88 - _internal - 127.0.0.1 - - [16/Jan/2020 14:05:32] "GET /order-list.html HTTP/1.1" 200 -
+2020/01/16 14:10:52 - werkzeug - INFO - 88 - _internal - 127.0.0.1 - - [16/Jan/2020 14:10:52] "GET /lib/layui/css/modules/layer/default/icon.png HTTP/1.1" 200 -
+2020/01/16 14:10:52 - werkzeug - INFO - 88 - _internal - 127.0.0.1 - - [16/Jan/2020 14:10:52] "GET /apollo_update?ap_id=125 HTTP/1.1" 200 -
+2020/01/16 14:11:18 - werkzeug - INFO - 88 - _internal - 127.0.0.1 - - [16/Jan/2020 14:11:18] "POST /apollo_update2 HTTP/1.1" 200 -
+2020/01/16 14:11:21 - werkzeug - INFO - 88 - _internal - 127.0.0.1 - - [16/Jan/2020 14:11:21] "GET /order-list.html?start=&end=&ap_env=&ap_w_url=&ap_r_url= HTTP/1.1" 200 -
+2020/01/16 14:12:28 - werkzeug - INFO - 88 - _internal - 127.0.0.1 - - [16/Jan/2020 14:12:28] "GET /apollo_select?ap_id=125 HTTP/1.1" 200 -
+2020/01/16 14:30:33 - werkzeug - INFO - 88 - _internal - 127.0.0.1 - - [16/Jan/2020 14:30:33] "GET /adminlist HTTP/1.1" 200 -
+2020/01/16 14:30:37 - werkzeug - INFO - 88 - _internal - 127.0.0.1 - - [16/Jan/2020 14:30:37] "GET /index2.html HTTP/1.1" 200 -
+2020/01/16 14:30:37 - werkzeug - INFO - 88 - _internal - 127.0.0.1 - - [16/Jan/2020 14:30:37] "GET /js/laydate.js HTTP/1.1" 200 -
+2020/01/16 14:30:37 - werkzeug - INFO - 88 - _internal - 127.0.0.1 - - [16/Jan/2020 14:30:37] "GET /js/theme/default/laydate.css?v=5.0.9 HTTP/1.1" 200 -
+2020/01/16 14:30:46 - werkzeug - INFO - 88 - _internal - 127.0.0.1 - - [16/Jan/2020 14:30:46] "GET /js/theme/default/font/iconfont.svg HTTP/1.1" 200 -
+2020/01/16 14:30:46 - werkzeug - INFO - 88 - _internal - 127.0.0.1 - - [16/Jan/2020 14:30:46] "GET /js/theme/default/font/iconfont.woff HTTP/1.1" 200 -

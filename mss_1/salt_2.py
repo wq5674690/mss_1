@@ -62,7 +62,7 @@ class SaltApi:
             params = {'client': 'local', 'fun': method, 'tgt': tgt, 'arg': arg}
         else:
             params = {'client': 'local', 'fun': method, 'tgt': tgt}
-        print('命令参数: ', params)
+        # print('命令参数: ', params)
         result = self.get_data(self.url, params)
         return result
 
